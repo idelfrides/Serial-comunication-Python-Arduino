@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="" />
+    <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/sketch_nov06a/sketch_nov06a-sensores/sketch_nov06a-sensores.ino" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/py-arduino.iml" afterPath="$PROJECT_DIR$/.idea/py-arduino.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/DHTtester/DHTtester.ino" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/DHTtester/DHTtester.ino" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python/app_principal.py" afterPath="$PROJECT_DIR$/python/app_principal.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +23,27 @@
       <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/app_principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="1596">
+              <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+              <folding>
+                <element signature="e#25#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+        <option value="$PROJECT_DIR$/python/app_principal.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -50,30 +72,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="py-arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py-arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="py-arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="py-arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,24 +125,24 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25349087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -135,77 +157,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="56">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <marker date="1509936230857" expanded="true" signature="39:4079" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="72:245" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1509936230857" expanded="true" signature="339:484" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="508:1724" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="590:921" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="603:658" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="962:1278" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="975:1030" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1319:1672" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1332:1387" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1775:1800" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1847:1904" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1944:2569" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="1998:2569" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="2037:2168" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="2206:2333" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="2375:2520" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="2629:3411" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="2638:2750" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1509936230857" expanded="true" signature="3295:3411" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="3465:4079" ph="..." />
-            <marker date="1509936230857" expanded="true" signature="3474:3606" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1510201826888" expanded="false" signature="25:50" ph="import ..." />
-            <marker date="1510201826888" expanded="true" signature="102:3733" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="132:145" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="169:228" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="267:514" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="554:589" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="614:952" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="654:934" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1001:1027" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1064:1094" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1129:1524" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1169:1489" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1224:1393" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1567:1610" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1661:3077" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1775:2093" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1810:1884" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="1922:1995" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2013:2093" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2126:2460" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2161:2235" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2288:2361" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2380:2460" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2499:2819" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2535:2609" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2647:2720" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2739:2819" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2833:3077" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="2981:3056" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3127:3216" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3244:3257" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3297:3470" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3514:3676" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3713:3733" ph="..." />
-            <marker date="1510201826888" expanded="true" signature="3744:3858" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <element signature="e#25#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -214,18 +171,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1403">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509932772024" expanded="true" signature="48:247" ph="..." />
-            <marker date="1509932772024" expanded="true" signature="53:142" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510254329495" expanded="false" signature="25:53" ph="import ..." />
+            <marker date="1510254329495" expanded="true" signature="82:5192" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="115:288" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510254329495" expanded="true" signature="382:541" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="565:1782" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="648:979" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="661:716" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1020:1336" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1033:1088" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1377:1730" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1390:1445" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1833:1858" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="1905:1962" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2002:2627" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2056:2627" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2095:2226" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2264:2391" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2433:2578" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2687:3573" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="2696:2808" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510254329495" expanded="true" signature="3457:3573" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="3624:4524" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="3633:3745" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510254329495" expanded="true" signature="4408:4524" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="4578:5192" ph="..." />
+            <marker date="1510254329495" expanded="true" signature="4587:4719" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="91" column="42" lean-forward="false" selection-start-line="91" selection-start-column="42" selection-end-line="91" selection-end-column="42" />
+          <folding>
+            <marker date="1510348721619" expanded="true" signature="25:50" ph="import ..." />
+            <marker date="1510348721619" expanded="true" signature="102:4142" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="114:250" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510348721619" expanded="true" signature="275:288" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="312:528" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="559:806" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="842:877" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="898:1236" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="938:1218" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1281:1307" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1348:1378" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1413:1795" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1453:1777" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1508:1681" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1801:1879" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="1930:3421" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2152:2469" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2187:2261" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2298:2371" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2389:2469" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2502:2819" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2537:2611" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2648:2721" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2739:2819" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2857:3175" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="2893:2966" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3004:3079" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3097:3175" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3189:3421" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3325:3400" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3471:3560" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3588:3601" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3641:3814" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="3858:4020" ph="..." />
+            <marker date="1510348721619" expanded="true" signature="4027:4142" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1510348721619" expanded="true" signature="4144:4484" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="1596">
+          <caret line="57" column="16" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="e#25#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

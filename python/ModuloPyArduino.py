@@ -47,7 +47,7 @@ class ModuloPyArduino(object):
     def data_py2arduino(self, con, action):
         con.write(action)
 
-    def data_arduino2py(self, con):
+    def get_data_arduino2py(self, con):
         return con.readline()
 
     def serial_loop(self, conec):
@@ -56,20 +56,20 @@ class ModuloPyArduino(object):
             esc = self.menu()
             if esc != 2:
                 self.data_py2arduino(conec, esc)
-                leitura_serial = self.data_arduino2py(conec)
+                leitura_serial = self.get_data_arduino2py(conec)
                 print '\n Arduino diz \n ', leitura_serial
             else:
                 print"\n\n Voce escolheu sair da aplicacao.\n Ate mais!!\n\n"
 
         return 0
 
-    def get_serial_data(self, conec):
-        return self.data_arduino2py(conec)
+    # def get_serial_data(self, conec):
+    #   return self.data_arduino2py(conec)
 
     def validate_sensor_data(self, param, valor):
-        refval_dht = 40
-        refval_umi = 30
-        refval_soil = 25
+        refval_dht = 30     # referência, média de temperatura
+        refval_umi = 20     # referência, média de umidade
+        refval_soil = 20    # referência, média de umidade solo
 
         if param == "temperatura":
             if valor > refval_dht:
@@ -79,7 +79,7 @@ class ModuloPyArduino(object):
                 estado_param = "LOW"
                 return estado_param
             else:
-                estado_param = "indefinida"
+                estado_param = "indefinido"
                 return estado_param
         elif param == "umidade":
             if valor > refval_umi:
@@ -89,7 +89,7 @@ class ModuloPyArduino(object):
                 estado_param = "LOW"
                 return estado_param
             else:
-                estado_param = "indefinida"
+                estado_param = "indefinido"
                 return estado_param
         elif param == "umidade solo":
             if valor > refval_soil:

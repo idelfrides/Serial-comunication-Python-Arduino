@@ -19,9 +19,9 @@ def main_aplication():
     p_a.serial_loop(con_s)
 
     # recuperando dados coletados pelo arduino
-    datasoil = p_a.get_serial_data(con_soil)
-    datadht = p_a.get_serial_data(con_dht)
-    dataumid = p_a.get_serial_data(con_umid)
+    datasoil = p_a.get_data_arduino2py(con_soil)
+    datadht = p_a.get_data_arduino2py(con_dht)
+    dataumid = p_a.get_data_arduino2py(con_umid)
 
     # --------------------------------------------------------------
     #  Management  of the data obteined by arduino board
@@ -47,20 +47,11 @@ def main_aplication():
         test = dp.DataProcess()
         test.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
         close_all_conection()
-        t.sleep(15)
+        t.sleep(10)
     else:
         print('\n\n One or more value of parameter are invalid\n\n')
         close_all_conection()
-        t.sleep(15)
-
-
-def run_app(rodar):
-
-    while rodar == 1:
-        print("\n\n Apliacacao em execução")
-        main_aplication()
-
-    print("\n\n Apliacacao NAO em execução")
+        t.sleep(10)
 
 
 def close_all_conection():
@@ -75,10 +66,19 @@ def close_all_conection():
     con_umid.close()
 
 
-# --------------------------------------------------
+def run_app(rodar):
+
+    while rodar == 1:
+        print("\n\n Apliacacao em execução")
+        main_aplication()
+
+    print("\n\n Apliacacao NAO em execução")
+
+
+# ----------------------------------------------------
 #  Calling de main method to start the application
 #  1 ->  executando
 #  0 ->  parado
-# ---------------------------------------------------
+# ----------------------------------------------------
 
 run_app(1)
