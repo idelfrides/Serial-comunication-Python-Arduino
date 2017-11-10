@@ -23,6 +23,10 @@ def create_file(texto):
     print (l[1])
     print (l[2])
     print (l[3])
+<<<<<<< HEAD
+=======
+    print(l[4])
+>>>>>>> 255646f4279f8595d7247d390daeb77be100512e
 
 
     print "\n\n"
