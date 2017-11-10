@@ -16,6 +16,6 @@ The main functions are located in file app_proncipal.py:
 - It call many methods belong to others classes and controll application runtime.
 
 
-Author: IDELFRIDES JORGE
+Author: IDELFRIDES JORGE  |  
 Mail me by idelfridesjorge@alu.ufc.br
 
