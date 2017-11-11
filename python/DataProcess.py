@@ -2,6 +2,7 @@
 
 import os
 import random as r
+import json
 
 
 class DataProcess(object):
@@ -80,6 +81,23 @@ class DataProcess(object):
                 controller = 0
             else:
                 controller = 1
+
+
+    def create_table_data(self, data):
+        f = open('tabela.jason', 'w')
+        f.write(data)
+        f.close()
+
+        f = open('tabela.jason', 'r')
+        d = f.read()
+        print(d)
+        f.close()
+
+
+    def formata_arquivo(self, d1, d2, d3):
+        d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
+        self.create_table_data(d)
+
 
     # @staticmethod
     def define_disease(self, t, h, s):

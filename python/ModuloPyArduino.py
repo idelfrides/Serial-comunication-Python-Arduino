@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import serial
-import json
+
 # import time as t
 
 
@@ -63,13 +63,10 @@ class ModuloPyArduino(object):
 
         return 0
 
-    # def get_serial_data(self, conec):
-    #   return self.data_arduino2py(conec)
-
     def validate_sensor_data(self, param, valor):
         refval_dht = 30     # referência, média de temperatura
-        refval_umi = 20     # referência, média de umidade
-        refval_soil = 20    # referência, média de umidade solo
+        refval_umi = 30     # referência, média de umidade
+        # refval_soil = 20    # referência, média de umidade solo
 
         if param == "temperatura":
             if valor > refval_dht:
@@ -92,19 +89,17 @@ class ModuloPyArduino(object):
                 estado_param = "indefinido"
                 return estado_param
         elif param == "umidade solo":
-            if valor > refval_soil:
-                estado_param = "WET"
+            if valor <= 399:
+                estado_param = "WET"    # molhado
                 return estado_param
-            elif valor < refval_soil:
-                estado_param = "MOIST"
+            elif valor >= 400 and valor <= 699:
+                estado_param = "MOIST"   # umido
                 return estado_param
             else:
-                estado_param = "MODERATE"
+                estado_param = "MODERATE"  #seco
                 return estado_param
         else:
             print("\n\n WARNNING: The parameter given is not valid\n\n The stage of this parameter can't be definided!!!")
-            # estado_param = "Parâmetro indefinido"
-            # return  restado_param
             return 0
 
     def sendind_data_py2cloud(self, d1, d2, d3):
@@ -113,20 +108,6 @@ class ModuloPyArduino(object):
 
     def sinalizador(self):
         pass
-
-    def create_table_data(self, data):
-        f = open('tabela.jason', 'w')
-        f.write(data)
-        f.close()
-
-        f = open('tabela.jason', 'r')
-        d = f.read()
-        print(d)
-        f.close()
-
-    def formata_arquivo(self, d1, d2, d3):
-        d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
-        self.create_table_data(d)
 
 
     """-------------------------------------

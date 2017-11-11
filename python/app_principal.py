@@ -8,6 +8,8 @@ import time as t
 def main_aplication():
     print("\n\n Eu sou principal")
     p_a = mpa.ModuloPyArduino()
+    dpo = dp.DataProcess()
+
     p_a.imprime()
     ps, psoil, pdht, pumid, v = p_a.config_arduino()
 
@@ -19,8 +21,8 @@ def main_aplication():
     p_a.serial_loop(con_s)
 
     # recuperando dados coletados pelo arduino
-    datasoil = p_a.get_data_arduino2py(con_soil)
     datadht = p_a.get_data_arduino2py(con_dht)
+    datasoil = p_a.get_data_arduino2py(con_soil)
     dataumid = p_a.get_data_arduino2py(con_umid)
 
     # --------------------------------------------------------------
@@ -41,11 +43,11 @@ def main_aplication():
         # p_a.sendind_data_py2cloud(datadht_verified, datasoil_verified, dataumid_verified)
 
         # dados numéricos
-        p_a.formata_arquivo(datadht, datasoil, dataumid)
+        dpo.formata_arquivo(datadht, datasoil, dataumid)
 
         # invoca o metodo para indicar o c4.5 a existência de dados para analisar
-        test = dp.DataProcess()
-        test.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+
+        dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
         close_all_conection()
         t.sleep(10)
     else:
@@ -75,10 +77,10 @@ def run_app(rodar):
     print("\n\n Apliacacao NAO em execução")
 
 
-# ----------------------------------------------------
+# ---------------------------------------------------
 #  Calling de main method to start the application
 #  1 ->  executando
 #  0 ->  parado
-# ----------------------------------------------------
+# ---------------------------------------------------
 
 run_app(1)
