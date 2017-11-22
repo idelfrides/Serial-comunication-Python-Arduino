@@ -17,6 +17,7 @@ void loop() {
   data_soil_pin = analogRead(port_soil);
   //data_dht11_pin = digitalRead(port_dht11);  
   Serial.println(data_soil_pin); 
+  //tone(port_soil, 1, 1);
  // Serial.println(data_dht11_pin);  
   Serial.println("------------------------------");
 }
