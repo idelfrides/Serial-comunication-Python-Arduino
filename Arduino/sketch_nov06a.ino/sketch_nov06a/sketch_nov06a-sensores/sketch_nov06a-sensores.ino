@@ -13,12 +13,12 @@ void setup() {
 }
 
 void loop() {
-  delay(5000) // espera por 5 segundos
+  delay(5000); // espera por 5 segundos
   data_soil_pin = analogRead(port_soil);
   //data_dht11_pin = digitalRead(port_dht11);  
   Serial.println(data_soil_pin); 
-  Serial.println(data_dht11_pin);  
-  Serial.println("------------------------------")
+ // Serial.println(data_dht11_pin);  
+  Serial.println("------------------------------");
 }
 
 
