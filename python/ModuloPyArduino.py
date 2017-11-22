@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import serial
+import serial as s
 
 # import time as t
 
@@ -15,23 +15,24 @@ class ModuloPyArduino(object):
     def __init__(self):
         pass
 
-    def imprime(self):
-        print("\n Eu sou imprime() e vc eh \n Obama WM")
+    def appInfo(self):
+        print("\n Eu sou appInfo() e vc eh \n Obama WM")
         print("\n\n ---------------------------------------------")
         print(self.info)
         print("\n ---------------------------------------------")
 
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
-        porta_s = 'COM7'
+        # porta_s = 'COM7'
         porta_soil = 'COM3'
-        porta_dht = 'COM2'
-        porta_umid = 'COM5'
+        # porta_dht = 'COM2'
+        # porta_umid = 'COM5'
         speed = 9600
-        return porta_s, porta_soil, porta_dht, porta_umid, speed
+        return porta_soil, speed
 
     def set_conection(self, p, v):
-        return serial.Serial(p, v)
+        return s.Serial(p, v)
+
 
     def menu(self):
         what = True
