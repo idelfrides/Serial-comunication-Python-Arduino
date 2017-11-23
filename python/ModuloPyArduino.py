@@ -24,7 +24,7 @@ class ModuloPyArduino(object):
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
-        porta_soil = 'COM3'
+        porta_soil = "COM3"
         # porta_dht = 'COM2'
         # porta_umid = 'COM5'
         speed = 9600
@@ -46,6 +46,7 @@ class ModuloPyArduino(object):
         return op
 
     def data_py2arduino(self, con, action):
+        # con.write("Python escreve: ")
         con.write(action)
 
     def get_data_arduino2py(self, con):
@@ -61,6 +62,15 @@ class ModuloPyArduino(object):
                 print '\n Arduino diz \n ', leitura_serial
             else:
                 print"\n\n Voce escolheu sair da aplicacao.\n Ate mais!!\n\n"
+
+        return 0
+
+    def serial_loop_app(self, conec, run):
+        while run == 1:
+            leitura_serial = self.get_data_arduino2py(conec)
+            print '\n Arduino Leu: ', leitura_serial
+
+            self.data_py2arduino(conec, leitura_serial)
 
         return 0
 

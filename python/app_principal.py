@@ -5,7 +5,7 @@ import ModuloPyArduino as mpa
 import time as t
 
 
-def main_aplication():
+def main_aplication(loop):
     print("\n\n Eu sou principal")
     p_a = mpa.ModuloPyArduino()
     # dpo = dp.DataProcess()
@@ -19,19 +19,19 @@ def main_aplication():
     # con_dht = p_a.set_conection(pdht, v)
     # con_umid = p_a.set_conection(pumid, v)
 
-    # p_a.serial_loop(con_s)
+    p_a.serial_loop_app(con_soil, loop)
 
     # recuperando dados coletados pelo arduino
     # datadht = p_a.get_data_arduino2py(con_dht)
-    datasoil = p_a.get_data_arduino2py(con_soil)
+    # datasoil = p_a.get_data_arduino2py(con_soil)
     # dataumid = p_a.get_data_arduino2py(con_umid)
 
-    print('\n\n Deu certo\n\n valores nao verificados')
-    print(datasoil)
+    # print('\n\n Deu certo\n\n valores nao verificados')
+    # print(datasoil)
 
     # close_all_conection()
-    con_soil.close()
-    t.sleep(1)
+    # con_soil.close()
+    # t.sleep(1)
 
     # --------------------------------------------------------------
     #  Management  of the data obteined by arduino board
@@ -82,7 +82,7 @@ def run_app(rodar):
 
     while rodar == 1:
         print("\n\n Apliacacao em execução")
-        main_aplication()
+        main_aplication(rodar)
 
     print("\n\n Apliacacao NAO em execução")
 
