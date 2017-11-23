@@ -6,14 +6,12 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  char leitura = Serial.read();
-  if(leitura == '1'){
+    delay(3000);
     digitalWrite(led, HIGH);
     Serial.println("Led ligado com sucesso");
-  }else if(leitura == '0'){
+    
+    delay(3000);
     digitalWrite(led, LOW);
     Serial.println("Led desligado com sucesso");   
-  }
 }
 
