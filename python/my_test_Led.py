@@ -24,7 +24,6 @@ def run_app(rodar):
         print("\n\n Apliacacao em execução")
         app_principal_led()
         t.sleep(1)
-
     print("\n\n Apliacacao NAO em execução")
 
 
