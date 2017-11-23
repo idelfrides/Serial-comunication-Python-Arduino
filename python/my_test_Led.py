@@ -12,7 +12,11 @@ def app_principal_led():
     start = mpa.ModuloPyArduino()
     p, v = start.config_arduino()
     con = start.set_conection(p, v)
-    start.serial_loop(con)
+
+    if con != 0:
+        start.serial_loop(con)
+    else:
+        pass
 
 
 def run_app(rodar):
@@ -20,7 +24,6 @@ def run_app(rodar):
         print("\n\n Apliacacao em execução")
         app_principal_led()
         t.sleep(1)
-
     print("\n\n Apliacacao NAO em execução")
 
 

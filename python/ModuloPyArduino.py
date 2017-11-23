@@ -31,7 +31,11 @@ class ModuloPyArduino(object):
         return porta_soil, speed
 
     def set_conection(self, p, v):
-        return s.Serial(p, v)
+        con = s.Serial(p, v)
+        if not con.isOpen():
+            return con.open()
+        print "\n %s is open", p, con.isOpen()
+        return 0
 
 
     def menu(self):
