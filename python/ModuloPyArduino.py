@@ -1,8 +1,9 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import serial as s
 
-# import time as t
+import time as t
 
 
 class ModuloPyArduino(object):
@@ -31,11 +32,26 @@ class ModuloPyArduino(object):
         return porta_soil, speed
 
     def set_conection(self, p, v):
-        con = s.Serial(p, v)
-        if not con.isOpen():
-            return con.open()
-        print "\n %s is open", p, con.isOpen()
-        return 0
+        ser = s.Serial(p, v)
+        print"\n porta em uso antes de teste: ", ser.name
+
+        if ser.isOpen() == False:
+            return ser.open()
+        else:
+            print"\n porta em uso: ", ser.isOpen()
+            print"\n porta em uso: ", ser.name
+            print"\n Dump de config: ", ser
+
+            ser.close()
+            t.sleep(2)
+            return ser.open()
+
+    def set_conection2(self, p, v):
+        try:
+            ser = s.Serial(p, v)
+        except AttributeError:
+            print"\n porta já sem uso: ", ser.name
+
 
 
     def menu(self):
@@ -76,7 +92,7 @@ class ModuloPyArduino(object):
 
             self.data_py2arduino(conec, leitura_serial)
 
-        return 0
+
 
     def validate_sensor_data(self, param, valor):
         refval_dht = 30     # referência, média de temperatura

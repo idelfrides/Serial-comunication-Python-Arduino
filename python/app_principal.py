@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 import ModuloPyArduino as mpa
@@ -20,6 +21,10 @@ def main_aplication(loop):
     # con_umid = p_a.set_conection(pumid, v)
 
     p_a.serial_loop_app(con_soil, loop)
+
+    con_soil.close()
+
+
 
     # recuperando dados coletados pelo arduino
     # datadht = p_a.get_data_arduino2py(con_dht)
@@ -93,4 +98,6 @@ def run_app(rodar):
 #  0 ->  parado
 # ---------------------------------------------------
 
-run_app(1)
+if __name__ == '__main__':
+
+    run_app(1)
