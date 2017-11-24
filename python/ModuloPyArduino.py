@@ -25,26 +25,27 @@ class ModuloPyArduino(object):
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
-        porta_soil = "COM3"
+        # porta_soil = "COM3"
         # porta_dht = 'COM2'
         # porta_umid = 'COM5'
+        porta_pista_led = 'COM3'
         speed = 9600
-        return porta_soil, speed
+        return porta_pista_led, speed
 
     def set_conection(self, p, v):
         ser = s.Serial(p, v)
         print"\n porta em uso antes de teste: ", ser.name
 
-        if ser.isOpen() == False:
+        if not ser.isOpen():
             return ser.open()
         else:
-            print"\n porta em uso: ", ser.isOpen()
+            print"\n porta em uso ? ", ser.isOpen()
             print"\n porta em uso: ", ser.name
             print"\n Dump de config: ", ser
-
-            ser.close()
-            t.sleep(2)
-            return ser.open()
+            # ser.close()
+            t.sleep(10)
+            # ser2 = s.Serial(p, v)
+            return ser
 
     def set_conection2(self, p, v):
         try:
@@ -87,11 +88,10 @@ class ModuloPyArduino(object):
 
     def serial_loop_app(self, conec, run):
         while run == 1:
+            #if conec.inWaiting() > 0:
             leitura_serial = self.get_data_arduino2py(conec)
             print '\n Arduino Leu: ', leitura_serial
-
-            self.data_py2arduino(conec, leitura_serial)
-
+            # self.data_py2arduino(conec, leitura_serial)
 
 
     def validate_sensor_data(self, param, valor):

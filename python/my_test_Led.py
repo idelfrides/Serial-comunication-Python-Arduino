@@ -18,18 +18,20 @@ def app_principal_led():
     """
 
 
-
     start = mpa.ModuloPyArduino()
     p, v = start.config_arduino()
     con = start.set_conection(p, v)
 
+
     print "\n Status of conection: ", con
     if con != 0:
-        start.serial_loop(con)
+        start.serial_loop_app(con, 1)
     else:
         pass
 
+    con.close()
 
+# method run_app with parameter
 def run_app(rodar):
     while rodar == 1:
         print("\n\n Apliacacao em execução")
@@ -38,10 +40,11 @@ def run_app(rodar):
     print("\n\n Apliacacao NAO em execução")
 
 
+# method run_app without parameter
 def run_app_led():
     print("\n\n Apliacacao em execução")
     app_principal_led()
-    t.sleep(1)
+    t.sleep(2)
     print("\n\n Apliacacao Encerrada\n\n\n")
     t.sleep(2)
 
