@@ -17,6 +17,5 @@ The main functions are located in file app_proncipal.py:
 
 
 Author: IDELFRIDES JORGE  |  
-
 Mail me by idelfridesjorge@alu.ufc.br
 
