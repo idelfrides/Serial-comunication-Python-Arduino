@@ -12,10 +12,11 @@ Data table is a JSON file like folowing format:
 }
 
 The main functions are located in file app_proncipal.py:
-- It start de application
+- It start the application
 - It call many methods belong to others classes and controll application runtime.
 
 
 Author: IDELFRIDES JORGE  |  
+
 Mail me by idelfridesjorge@alu.ufc.br
 
