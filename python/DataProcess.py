@@ -151,7 +151,7 @@ class DataProcess(object):
 
     # @staticmethod
     def show_disease(self, sno):
-        """ print a disease corresponding de combination of atributes.
+        """ print a disease corresponding the combination of atributes.
             there are 7 possibilities in this application
         """
 

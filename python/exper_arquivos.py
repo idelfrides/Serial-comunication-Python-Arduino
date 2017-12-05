@@ -18,16 +18,12 @@ def create_file(texto):
     print(f2.tell())
     d = dict(f2)
     print(d)
-    l = f2.readline()
-    print(l)
-    print (l[1])
-    print (l[2])
-    print (l[3])
-<<<<<<< HEAD
-=======
-    print(l[4])
->>>>>>> 255646f4279f8595d7247d390daeb77be100512e
-
+    x = f2.readline()
+    print(x)
+    print (x[1])
+    print (x[2])
+    print (x[3])
+    print(x[4])
 
     print "\n\n"
     f.close()
@@ -44,4 +40,6 @@ def formata_arquivo():
     create_file(d)
 
 # arquivo1()
+
+
 formata_arquivo()
