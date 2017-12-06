@@ -95,7 +95,7 @@ class DataProcess(object):
         f.close()
 
 
-    def createColectionControll(self, data):
+    def createColectionControle(self, data):
         f = open('controle.json', 'w')
         f.write(data)
         f.close()
@@ -105,19 +105,19 @@ class DataProcess(object):
         f.close()
 
 
-    def formata_arquivo(self, d1, d2, d3):
+    def formataArquivo(self, d1, d2, d3):
         d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
         self.create_table_data(d)
 
 
     def formataArquivoControle(self, update, change, sno):
         dj = json.dumps({'Update': update, 'Change': change, 'SNO': sno}, sort_keys=True, indent=4, separators=(',', ':'))
-        self.createColectionControll(dj)
+        self.createColectionControle(dj)
 
 
     # @staticmethod
     def define_disease(self, t, h, s):
-        """ define a disease under the atributes
+        """ define a disease under the atributes (the parameters of method)
             t = temperatue, h = humidity, s = soil moisture
         """
 
@@ -145,6 +145,7 @@ class DataProcess(object):
         else:
             print("\n\n Combinação de parâmetros invalida. \n Aplicação será encerrada!!\n\n")
             return 0
+
 
     def define_disease_table_data(self, t, h, s):
         """ define a disease under the atributes

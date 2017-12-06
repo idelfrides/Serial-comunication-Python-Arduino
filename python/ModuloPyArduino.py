@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import serial as s
+import DataProcess as Mdp
 
 import time as t
 
 
 class ModuloPyArduino(object):
+
+
     info = """
           Informação sobre app vai aqui
           ppppppppp sssss kkkk frrrr eee
@@ -86,12 +89,53 @@ class ModuloPyArduino(object):
 
         return 0
 
-    def serial_loop_app(self, conec, run):
+    def serialLoopApp(self, condht, conumid, consoil, run):
+        beforeState = 0
+        correntState = 0
+
+        dpo = Mdp.DataProcess()
+
         while run == 1:
-            # if conec.inWaiting() > 0:
-            leitura_serial = self.get_data_arduino2py(conec)
-            print '\n Arduino Leu: ', leitura_serial
-            # self.data_py2arduino(conec, leitura_serial)
+
+            # ------------------------------------------------------------
+            #      Recuperando dados coletados pelo arduino
+            # ------------------------------------------------------------
+            datadht = self.get_data_arduino2py(condht)
+            dataumid = self.get_data_arduino2py(conumid)
+            datasoil = self.get_data_arduino2py(consoil)
+
+            # ------------------------------------------------------------------
+            #  Verify and Management  of the data obteined by arduino board
+            # ------------------------------------------------------------------
+            datadht_verified = self.validate_sensor_data('temperatura', datadht)
+            dataumid_verified = self.validate_sensor_data('umidade', dataumid)
+            datasoil_verified = self.validate_sensor_data('umidade solo', datasoil)
+
+            if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
+
+                # Numerical data
+                dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified)
+
+                # Recupera o estado atual da plantação por meio dos parâmetros -
+                # temperatura, umidade e umidade do solo
+                correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+
+                if correntState != beforeState:
+                    dpo.formataArquivoControle(1, 1, correntState)
+                    beforeState = correntState
+                    print(beforeState)
+                else:
+                    dpo.formataArquivoControle(1, 0, beforeState)
+
+                # -------------------------------------------------------------
+                #   Call a method to send data to cloud mongoDB DB
+                # -------------------------------------------------------------
+                self.send_data_py2cloud()
+                t.sleep(10) # dorme(espera) por 10 segundos
+
+            else:
+                print('\n\n One or more values of parameter are invalid!!!\n\n')
+                t.sleep(10) # dorme(espera) por 10 segundos
 
 
     def validate_sensor_data(self, param, valor):
@@ -133,9 +177,14 @@ class ModuloPyArduino(object):
             print("\n\n WARNNING: The parameter given is not valid.\n\n The stage of this parameter can't be definided!!!")
             return 0
 
-    def sendind_data_py2cloud(self, d1, d2, d3):
-        print (d1, d2, d3)
-        """ como eu mando dados para nuvel usando python ?"""
+
+    @staticmethod
+    def send_data_py2cloud():
+        f = open('controle.json', 'r')
+        d = f.read()
+        print(d)
+        """ como eu mando dados para nuvem usando python ?"""
+
 
     def sinalizador(self):
         pass

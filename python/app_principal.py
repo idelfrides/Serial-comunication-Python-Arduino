@@ -35,7 +35,7 @@ def main_aplication():
     # -----------------------------------------------------------
     #       Configurçaão do arduino: portas velocidade
     # -----------------------------------------------------------
-    psoil, v = p_a.config_arduino()
+    # psoil, v = p_a.config_arduino()
     pdht, pumid, psoil, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
@@ -87,6 +87,8 @@ def main_aplication():
         # Numerical data
         # dpo.formataArquivoParam(datadht, dataumid, datasoil)
 
+        # Recupera o estado atual da plantação por meio dos parãmetros
+        # temperatura, umidade e umidade do solo
         correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
         sno = correntState
 
@@ -94,7 +96,9 @@ def main_aplication():
             dpo.formataArquivoControle(1, 1, sno)
             beforeState = correntState
         else:
-            dpo.formataArquivoControle(1, 0, beforeState)
+            sno = beforeState
+            dpo.formataArquivoControle(1, 0, sno)
+            # dpo.formataArquivoControle(1, 0, beforeState)
 
 
         # -------------------------------------------------------------

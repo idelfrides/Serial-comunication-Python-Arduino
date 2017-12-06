@@ -12,10 +12,12 @@ def create_file(texto):
     t = f2.read()
     print("\n\n mostrando testo do arquivo : \n\n")
     print(t)
-
-
     print(f2.readline())
-    print(f2.tell())
+    f2.flush()
+    f2.readline()
+    f2.fileno()
+
+    # print(f2.tell())
     f2.seek(0)
 
     # print(f2.tell())
