@@ -15,6 +15,8 @@ import time as t
 # ---------------------------------------------------------------
 # def main_aplication(loop):
 def main_aplication():
+    beforeState = 0
+    correntState = 0
 
     print("\n\n Eu sou principal")
 
@@ -80,10 +82,20 @@ def main_aplication():
         # -------------------------------------------------------------
         # Call a method to send data to cloud mongoDB DB --> not implementded yet
         # -------------------------------------------------------------
-        p_a.sendind_data_py2cloud(datadht_verified, dataumid_verified, datasoil_verified)
+        # p_a.sendind_data_py2cloud(datadht_verified, dataumid_verified, datasoil_verified)
 
         # Numerical data
-        dpo.formata_arquivo(datadht, dataumid, datasoil)
+        # dpo.formataArquivoParam(datadht, dataumid, datasoil)
+
+        correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+        sno = correntState
+
+        if correntState != beforeState:
+            dpo.formataArquivoControle(1, 1, sno)
+            beforeState = correntState
+        else:
+            dpo.formataArquivoControle(1, 0, beforeState)
+
 
         # -------------------------------------------------------------
         # Invoca o metodo para indicar a c4.5 a existência de dados
@@ -95,7 +107,7 @@ def main_aplication():
         # -------------------------------------------------------------
         #    Define e mostra a praga q está a ameaçar a plantação
         # -------------------------------------------------------------
-        dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+        # dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
 
         close_all_conection()
         t.sleep(1)

@@ -85,19 +85,34 @@ class DataProcess(object):
 
 
     def create_table_data(self, data):
-        f = open('tabela.jason', 'w')
+        f = open('tabela.json', 'w')
         f.write(data)
         f.close()
 
-        f = open('tabela.jason', 'r')
+        f = open('tabela.json', 'r')
         d = f.read()
         print(d)
+        f.close()
+
+
+    def createColectionControll(self, data):
+        f = open('controle.json', 'w')
+        f.write(data)
+        f.close()
+
+        f = open('controle.json', 'r')
+        d = f.read()
         f.close()
 
 
     def formata_arquivo(self, d1, d2, d3):
         d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
         self.create_table_data(d)
+
+
+    def formataArquivoControle(self, update, change, sno):
+        dj = json.dumps({'Update': update, 'Change': change, 'SNO': sno}, sort_keys=True, indent=4, separators=(',', ':'))
+        self.createColectionControll(dj)
 
 
     # @staticmethod
@@ -107,19 +122,26 @@ class DataProcess(object):
         """
 
         if t == "HIGH" and h == "HIGH" and s == "WET":
-            self.show_disease(1)
+            return 1
+            # self.show_disease(1)
         elif t == "LOW" and h == "HIGH" and s == "WET":
-            self.show_disease(2)
+            return 2
+            # self.show_disease(2)
         elif t == "LOW" and h == "HIGH" and s == "MODERATE":
-            self.show_disease(3)
+            return 3
+            # self.show_disease(3)
         elif t == "LOW" and h == "HIGH" and s == "WET":
-            self.show_disease(4)
+            return 4
+            # self.show_disease(4)
         elif t == "LOW" and h == "HIGH" and s == "MOIST":
-            self.show_disease(5)
+            return 5
+            # self.show_disease(5)
         elif t == "LOW" and h == "HIGH" and s == "MOIST":
-            self.show_disease(6)
+            return 6
+            # self.show_disease(6)
         elif t == "HIGH" and h == "HIGH" and s == "MOIST":
-            self.show_disease(7)
+            return 7
+            # self.show_disease(7)
         else:
             print("\n\n Combinação de parâmetros invalida. \n Aplicação será encerrada!!\n\n")
             return 0
