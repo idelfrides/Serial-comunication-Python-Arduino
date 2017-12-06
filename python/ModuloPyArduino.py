@@ -1,14 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+
 import serial as s
 import DataProcess as Mdp
-
 import time as t
 
 
 class ModuloPyArduino(object):
-
 
     info = """
           Informação sobre app vai aqui
@@ -96,12 +95,15 @@ class ModuloPyArduino(object):
         dpo = Mdp.DataProcess()
 
         while run == 1:
+            t.sleep(5)  
 
             # ------------------------------------------------------------
             #      Recuperando dados coletados pelo arduino
             # ------------------------------------------------------------
             datadht = self.get_data_arduino2py(condht)
+            t.sleep(2)
             dataumid = self.get_data_arduino2py(conumid)
+            t.sleep(2)
             datasoil = self.get_data_arduino2py(consoil)
 
             # ------------------------------------------------------------------
@@ -131,11 +133,11 @@ class ModuloPyArduino(object):
                 #   Call a method to send data to cloud mongoDB DB
                 # -------------------------------------------------------------
                 self.send_data_py2cloud()
-                t.sleep(10) # dorme(espera) por 10 segundos
+                t.sleep(5) # dorme(espera) por 10 segundos
 
             else:
                 print('\n\n One or more values of parameter are invalid!!!\n\n')
-                t.sleep(10) # dorme(espera) por 10 segundos
+                t.sleep(5) # dorme(espera) por 10 segundos
 
 
     def validate_sensor_data(self, param, valor):

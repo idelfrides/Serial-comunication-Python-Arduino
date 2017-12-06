@@ -1,4 +1,4 @@
-/* inclisão de bibliotecas */
+  /* inclisão de bibliotecas */
 #include "DHT.h"
 
 /* Definição de portas */
@@ -60,7 +60,7 @@ void loop() {
     Serial.println(data_umid);
     delay(2000);
     Serial.println(data_soil);
-    delay(2000); 
+    // delay(2000); 
     //  Serial.println(data_dht_f); 
 
   }
