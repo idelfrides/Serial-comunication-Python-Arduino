@@ -7,20 +7,16 @@
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
 
-# import time as t
-
 
 # ---------------------------------------------------------------
 #   Main application witch controll the application
 # ---------------------------------------------------------------
-
 def main_aplication(loop):
 
     print("\n\n Eu sou principal")
 
     # -----------------------------------------------------------
-    #       Instanciando objetos das classes ModuloPyArduino
-    #       e DataProcess
+    #       Instanciando objeto da classe ModuloPyArduino
     # -----------------------------------------------------------
     p_a = Mpa.ModuloPyArduino()
 
