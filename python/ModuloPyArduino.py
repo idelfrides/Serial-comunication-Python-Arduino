@@ -1,11 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
+from mhlib import isnumeric
 
 import serial as s
 import DataProcess as Mdp
 import time as t
-
+import numpy as n
 
 class ModuloPyArduino(object):
 
@@ -95,7 +95,7 @@ class ModuloPyArduino(object):
         dpo = Mdp.DataProcess()
 
         while run == 1:
-            t.sleep(5)  
+            t.sleep(5)  # dorme(espera) por 5 s entre leitutras de dados
 
             # ------------------------------------------------------------
             #      Recuperando dados coletados pelo arduino
@@ -106,38 +106,51 @@ class ModuloPyArduino(object):
             t.sleep(2)
             datasoil = self.get_data_arduino2py(consoil)
 
+            # verifica se os dados lidos são unméricos ou não
+            checkData = self.validaTipoDado(datadht, dataumid, datasoil)
+
             # ------------------------------------------------------------------
             #  Verify and Management  of the data obteined by arduino board
             # ------------------------------------------------------------------
-            datadht_verified = self.validate_sensor_data('temperatura', datadht)
-            dataumid_verified = self.validate_sensor_data('umidade', dataumid)
-            datasoil_verified = self.validate_sensor_data('umidade solo', datasoil)
+            if checkData == 1:
+                datadht_verified = self.validate_sensor_data('temperatura', datadht)
+                dataumid_verified = self.validate_sensor_data('umidade', dataumid)
+                datasoil_verified = self.validate_sensor_data('umidade solo', datasoil)
 
-            if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
+                if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
 
-                # Numerical data
-                dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified)
+                    # Numerical data
+                    dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified)
 
-                # Recupera o estado atual da plantação por meio dos parâmetros -
-                # temperatura, umidade e umidade do solo
-                correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+                    # Recupera o estado atual da plantação por meio dos parâmetros -
+                    # temperatura, umidade e umidade do solo
+                    correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
 
-                if correntState != beforeState:
-                    dpo.formataArquivoControle(1, 1, correntState)
-                    beforeState = correntState
-                    print(beforeState)
+                    if correntState != beforeState:
+                        dpo.formataArquivoControle(1, 1, correntState)
+                        beforeState = correntState
+                        print(beforeState)
+                    else:
+                        dpo.formataArquivoControle(1, 0, beforeState)
+
+                    # -------------------------------------------------------------
+                    #   Call a method to send data to cloud mongoDB DB
+                    # -------------------------------------------------------------
+                    self.send_data_py2cloud()
+                    t.sleep(5) # dorme(espera) por 10 segundos
+
                 else:
-                    dpo.formataArquivoControle(1, 0, beforeState)
-
-                # -------------------------------------------------------------
-                #   Call a method to send data to cloud mongoDB DB
-                # -------------------------------------------------------------
-                self.send_data_py2cloud()
-                t.sleep(5) # dorme(espera) por 10 segundos
-
+                    print('\n\n One or more values of parameter are invalid!!!\n\n')
+                    t.sleep(5)
             else:
-                print('\n\n One or more values of parameter are invalid!!!\n\n')
-                t.sleep(5) # dorme(espera) por 10 segundos
+                print("\n\n Falha de leitura do SENSOR DHT11 e/ou SOIL MISURE\n\n")
+
+
+    def validaTipoDado(self, d1, d2, d3):
+        if type(d1) != str and type(d2) != str and type(d3) != str:
+            return 1  # leitura realizada com sucesso
+        else:
+            return 0  # leitura realizada com falha
 
 
     def validate_sensor_data(self, param, valor):

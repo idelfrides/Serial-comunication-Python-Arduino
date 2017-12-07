@@ -45,6 +45,9 @@ def main_aplication(loop):
     #------------------------------------------------------------
     p_a.serialLoopApp(con_dht, con_umid, con_soil, loop)
 
+    close_all_conection()
+    print("\n\n Apliacacao ENCERRADA")
+
 
 def close_all_conection():
     global con_s
@@ -79,4 +82,4 @@ def run_application(rodar):
 
 if __name__ == '__main__':
 
-    run_application(1)
+    main_aplication(1)

@@ -23,7 +23,7 @@ DHT dhtUmid(umidPin, DHTTYPE);
    taxa de transmissão */
 void setup() {
   Serial.begin(9600);
-  Serial.println("\n\nDHT11 AND SOIL MOISTURE SENSORS\n");
+  Serial.println("\n\n DHT11 AND SOIL MOISTURE SENSORS\n");
   Serial.print("****************************************\n\n");
   
   //pinMode(port_dht, INPUT);
@@ -38,7 +38,7 @@ void setup() {
    enviados pelos sensores - loop() */
 void loop() {
   /* delay(ms) é dado em milisegundos. 1 ms = 0.001 s */
-  /* Espera por 5 s entre medidas */
+  /* Espera por 5 s entre cada medidas */
   delay(5000); 
   
   /* leitura de dados */
@@ -48,7 +48,7 @@ void loop() {
   data_dht_f = dht.readTemperature(true); //Fahrenheit
 
   if (isnan(data_dht) || isnan(data_umid) || isnan(data_dht_f)){
-    Serial.println("Failed to read from DHT sensor!");
+    Serial.println("\nFailed to read from DHT sensor!");
     return;
   }
   if(isnan(data_soil)){
