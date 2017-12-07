@@ -29,15 +29,16 @@ def main_aplication(loop):
     #       Configurção do arduino: portas e velocidade
     # -----------------------------------------------------------
 
-    pdht, pumid, psoil, v = p_a.config_arduino()
+    # pdht, pumid, psoil, v = p_a.config_arduino()
+    pdht, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
     #           Conexão com arduino
     # -----------------------------------------------------------
     # con_s = p_a.set_conection(ps, v)
     con_dht = p_a.set_conection(pdht, v)
-    con_umid = p_a.set_conection(pumid, v)
-    con_soil = p_a.set_conection(psoil, v)
+    # con_umid = p_a.set_conection(pumid, v)
+    # con_soil = p_a.set_conection(psoil, v)
 
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,

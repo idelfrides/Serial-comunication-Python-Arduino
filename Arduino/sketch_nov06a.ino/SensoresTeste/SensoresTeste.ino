@@ -61,7 +61,7 @@ void loop() {
     delay(2000);
     Serial.println(data_soil);
     // delay(2000); 
-    //  Serial.println(data_dht_f); 
+    // Serial.println(data_dht_f); 
 
   }
 }
