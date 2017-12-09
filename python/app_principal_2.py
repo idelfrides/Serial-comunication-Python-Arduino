@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # Copyright (c) 2017 Engineer IDELFRIDES JORGE
-# Distributed under the MIT license - AINDA NÃO COLOQUEI
-# #http://opensource.org/licenses/MIT
 
 __author__ = 'IDELFRIDES JORGE'
 

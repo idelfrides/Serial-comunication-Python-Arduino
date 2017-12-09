@@ -8,7 +8,7 @@ import time as t
 import ModulePyCloudMongo as Mpcm
 
 
-# ---------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
     info = """
           Informação sobre app vai aqui
@@ -19,8 +19,7 @@ class ModuloPyArduino(object):
     def __init__(self):
         pass
 
-
-    # -----------------------------------------------------------------------------
+    # ------------------------------------------------------------------------------
     def appInfo(self):
         print("\n Eu sou appInfo() e vc eh \n Obama WM")
         print("\n\n ---------------------------------------------")
@@ -64,7 +63,6 @@ class ModuloPyArduino(object):
             print "\n\n The application will be quited!!!\n\n\n"
             exit(0)
 
-
     # ------------------------------------------------------------------------------
     def menu(self):
         what = True
@@ -104,7 +102,6 @@ class ModuloPyArduino(object):
     def serialLoopApp(self, condht, conumid, consoil, run):
         beforeState = 0
         correntState = 0
-
         seg = 10
 
         dpo = Mdp.DataProcess()
@@ -170,11 +167,8 @@ class ModuloPyArduino(object):
 
                     # closing the conection with remote cloude mongo server
                     mpcmo.closeConection()
-
-                    # t.sleep(seg) # dorme(espera) 'seg'  segundos
                 else:
                     print('\n\n One or more values of parameter are invalid!!!\n\n')
-                    # t.sleep(seg) # dorme(espera) 'seg'  segundos
             else:
                 print("\n\n Falha de leitura do SENSOR DHT11 e/ou SOIL MISURE\n\n")
 
@@ -185,7 +179,6 @@ class ModuloPyArduino(object):
             return 1  # leitura realizada com sucesso
         else:
             return 0  # leitura realizada com falha
-
 
     # ------------------------------------------------------------------------------
     def validate_sensor_data(self, param, valor):
@@ -227,7 +220,6 @@ class ModuloPyArduino(object):
             print("\n\n WARNNING: The parameter given is not valid.\n\n The stage of this parameter can't be definided!!!")
             return 0
 
-
     # -----------------------------------------------------------------------------
     @staticmethod
     def send_data_py2cloud():
@@ -236,8 +228,7 @@ class ModuloPyArduino(object):
         print(d)
         """ como eu mando dados para nuvem usando python ?"""
 
-
-    # ----------------------------------------------------------------------------
+    # -----------------------------------------------------------------------------
     def sinalizador(self):
         pass
 
