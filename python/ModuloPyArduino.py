@@ -5,10 +5,11 @@ from mhlib import isnumeric
 import serial as s
 import DataProcess as Mdp
 import time as t
-import numpy as n
+import ModulePyCloudMongo as Mpcm
 
+
+# ---------------------------------------------------------------------------------
 class ModuloPyArduino(object):
-
     info = """
           Informação sobre app vai aqui
           ppppppppp sssss kkkk frrrr eee
@@ -18,12 +19,15 @@ class ModuloPyArduino(object):
     def __init__(self):
         pass
 
+
+    # -----------------------------------------------------------------------------
     def appInfo(self):
         print("\n Eu sou appInfo() e vc eh \n Obama WM")
         print("\n\n ---------------------------------------------")
         print(self.info)
         print("\n ---------------------------------------------")
 
+    # ------------------------------------------------------------------------------
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
@@ -35,6 +39,7 @@ class ModuloPyArduino(object):
         # return porta_dht, porta_umid, porta_soil, speed
         return porta_dht, speed
 
+    # ------------------------------------------------------------------------------
     def set_conection(self, p, v):
         ser = s.Serial(p, v)
         print"\n porta em uso antes de teste: ", ser.name
@@ -50,14 +55,17 @@ class ModuloPyArduino(object):
             # ser2 = s.Serial(p, v)
             return ser
 
+    # ------------------------------------------------------------------------------
     def set_conection2(self, p, v):
         try:
             ser = s.Serial(p, v)
-        except AttributeError:
-            print"\n porta já sem uso: ", ser.name
+        except IOError:
+            print"\n Erro ao abrir a conexao. Porta já sem uso:  ", ser.name
+            print "\n\n The application will be quited!!!\n\n\n"
+            exit(0)
 
 
-
+    # ------------------------------------------------------------------------------
     def menu(self):
         what = True
         while what:
@@ -69,13 +77,16 @@ class ModuloPyArduino(object):
                 what = False
         return op
 
+    # -----------------------------------------------------------------------------
     def data_py2arduino(self, con, action):
         # con.write("Python escreve: ")
         con.write(action)
 
+    # -----------------------------------------------------------------------------
     def get_data_arduino2py(self, con):
         return con.readline()
 
+    # -----------------------------------------------------------------------------
     def serial_loop(self, conec):
         esc = 1
         while esc != 2:
@@ -89,14 +100,18 @@ class ModuloPyArduino(object):
 
         return 0
 
+    # -----------------------------------------------------------------------------
     def serialLoopApp(self, condht, conumid, consoil, run):
         beforeState = 0
         correntState = 0
 
+        seg = 10
+
         dpo = Mdp.DataProcess()
+        mpcmo = Mpcm.ModulePyCloudMongo()
 
         while run == 1:
-            t.sleep(5)  # dorme(espera) por 5 s entre leitutras de dados
+            t.sleep(seg)  # dorme(espera) por 5 s entre leitutras de dados
 
             # ------------------------------------------------------------
             #      Recuperando dados coletados pelo arduino
@@ -120,8 +135,12 @@ class ModuloPyArduino(object):
 
                 if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
 
-                    # Numerical data
-                    dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified)
+                    # ----------------------------------------------------------
+                    # format json data files: 1 - numerical received data
+                    # 2 - virified data
+                    # ----------------------------------------------------------
+                    dpo.formataArquivo(datadht, dataumid, datasoil, 1)   #1
+                    dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified, 2) #2
 
                     # Recupera o estado atual da plantação por meio dos parâmetros -
                     # temperatura, umidade e umidade do solo
@@ -137,16 +156,30 @@ class ModuloPyArduino(object):
                     # -------------------------------------------------------------
                     #   Call a method to send data to cloud mongoDB DB
                     # -------------------------------------------------------------
-                    self.send_data_py2cloud()
-                    t.sleep(5) # dorme(espera) por 10 segundos
+                    # opening a conection with cloud mongo remote server
+                    uri, port = mpcmo.configCloudMongoSC()
 
+                    # insert data into collection dataNumSensores
+                    mpcmo.handleCloudMongoData(uri, port, 'dataNumSensores.json', 1)
+
+                    # insert data into collection dataNumSensores
+                    mpcmo.handleCloudMongoData(uri, port, 'dataVerificSensores.json', 2)
+
+                    # insert data into collection dataNumSensores
+                    mpcmo.handleCloudMongoData(uri, port, 'controle.json', 3)
+
+                    # closing the conection with remote cloude mongo server
+                    mpcmo.closeConection()
+
+                    # t.sleep(seg) # dorme(espera) 'seg'  segundos
                 else:
                     print('\n\n One or more values of parameter are invalid!!!\n\n')
-                    t.sleep(5)
+                    # t.sleep(seg) # dorme(espera) 'seg'  segundos
             else:
                 print("\n\n Falha de leitura do SENSOR DHT11 e/ou SOIL MISURE\n\n")
 
 
+    # ------------------------------------------------------------------------------
     def validaTipoDado(self, d1, d2, d3):
         if type(d1) != str and type(d2) != str and type(d3) != str:
             return 1  # leitura realizada com sucesso
@@ -154,6 +187,7 @@ class ModuloPyArduino(object):
             return 0  # leitura realizada com falha
 
 
+    # ------------------------------------------------------------------------------
     def validate_sensor_data(self, param, valor):
         refval_dht = 30     # referência, média de temperatura relativa
         refval_umi = 30     # referência, média de umidade relativa
@@ -194,6 +228,7 @@ class ModuloPyArduino(object):
             return 0
 
 
+    # -----------------------------------------------------------------------------
     @staticmethod
     def send_data_py2cloud():
         f = open('controle.json', 'r')
@@ -202,6 +237,7 @@ class ModuloPyArduino(object):
         """ como eu mando dados para nuvem usando python ?"""
 
 
+    # ----------------------------------------------------------------------------
     def sinalizador(self):
         pass
 

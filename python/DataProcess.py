@@ -85,29 +85,55 @@ class DataProcess(object):
 
 
     def create_table_data(self, data):
-        f = open('tabela.json', 'w')
-        f.write(data)
-        f.close()
-
-        f = open('tabela.json', 'r')
-        d = f.read()
-        print(d)
-        f.close()
-
-
-    def createColectionControle(self, data):
         f = open('controle.json', 'w')
         f.write(data)
         f.close()
 
         f = open('controle.json', 'r')
         d = f.read()
+        print(d)
         f.close()
 
+    def createColectionDataSensor(self, data, cod):
+        if cod == 1:
+            try:
+                f = open('datanumsensor.json', 'w')
+                f.write(data)
+                f.close()
+            except IOError:
+                print("\n\n I/O Error: Can not open file datanumsensor.json")
+                print "\n\n The application will be quited!!!\n\n\n"
+                exit(0)
+        elif cod == 2:
+            try:
+                f = open('datacaracsensor.json', 'w')
+                f.write(data)
+                f.close()
+            except IOError:
+                print("\n\n I/O Error: Can not open file datacaracsensor.json")
+                print "\n\n The application will be quited!!!\n\n\n"
+                exit(0)
 
-    def formataArquivo(self, d1, d2, d3):
+
+
+    def createColectionControle(self, data):
+        try:
+            f = open('controle.json', 'w')
+            f.write(data)
+            f.close()
+        except IOError:
+            print("\n\n I/O Error: Can not open file controle.json")
+            print "\n\n The application will be quited!!!\n\n\n"
+            exit(0)
+
+    # f = open('controle.json', 'r')
+        # d = f.read()
+        # f.close()
+
+
+    def formataArquivo(self, d1, d2, d3, collec):
         d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
-        self.create_table_data(d)
+        self.createColectionDataSensor(d, collec)
 
 
     def formataArquivoControle(self, update, change, sno):

@@ -1,12 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# Copyright (c) 2017 Engineer IDELFRIDES JORGE
+# Distributed under the MIT license - AINDA NÃO COLOQUEI
+# #http://opensource.org/licenses/MIT
+
+__author__ = 'IDELFRIDES JORGE'
+
+# Written with python 2.7.14 | mongoDB-3.4.10 | pymongo-3.6
+# A python script connecting to a MongoDB given a MongoDB Connection URI.
 
 # ---------------------------------------------------------------
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
-
 
 # ---------------------------------------------------------------
 #   Main application witch controll the application
@@ -33,10 +40,10 @@ def main_aplication(loop):
     pdht, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
-    #           Conexão com arduino
+    #           Conexão com arduino: 1 or 2
     # -----------------------------------------------------------
     # con_s = p_a.set_conection(ps, v)
-    con_dht = p_a.set_conection(pdht, v)
+    con_dht = p_a.set_conection2(pdht, v)
     # con_umid = p_a.set_conection(pumid, v)
     # con_soil = p_a.set_conection(psoil, v)
 
@@ -82,5 +89,4 @@ def run_application(rodar):
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
-
     main_aplication(1)
