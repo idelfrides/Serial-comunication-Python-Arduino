@@ -4,7 +4,6 @@
 import pymongo as pym
 
 
-
 # uri = 'mongodb://<dbuser>:<dbpassworb>@ds033186.mlab.com:33186/farmdb'
 uri = 'mongodb://wmfarmdb:wmfarmdb17@ds033186.mlab.com:33186/farmdb'
 hostPort = 33186
