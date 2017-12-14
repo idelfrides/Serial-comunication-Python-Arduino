@@ -10,6 +10,7 @@ import ModulePyCloudMongo as Mpcm
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
+    tempoAtual = 5
     info = """
           Informação sobre app vai aqui
           ppppppppp sssss kkkk frrrr eee
@@ -102,13 +103,13 @@ class ModuloPyArduino(object):
     def serialLoopApp(self, condht, conumid, consoil, run):
         beforeState = 0
         correntState = 0
-        seg = 10
 
         dpo = Mdp.DataProcess()
         mpcmo = Mpcm.ModulePyCloudMongo()
 
         while run == 1:
-            t.sleep(seg)  # dorme(espera) por 5 s entre leitutras de dados
+
+            t.sleep(dpo.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
 
             # ------------------------------------------------------------
             #      Recuperando dados coletados pelo arduino
@@ -165,8 +166,13 @@ class ModuloPyArduino(object):
                     # insert data into collection dataNumSensores
                     mpcmo.handleCloudMongoData(uri, port, 'controle.json', 3)
 
-                    # closing the conection with remote cloude mongo server
-                    mpcmo.closeConection()
+                    # Check and get the responde time
+                    self.tempoAtual = mpcmo.handleCloudMongoData(uri, port, 'controle.json', 4)
+                    if self.tempoAtual != dpo.tempoPadrao:
+                         dpo.tempoPadrao = self.tempoAtual
+
+                    # closing the conection with remote cloud mongo server
+                    mpcmo.closeCMConection()
                 else:
                     print('\n\n One or more values of parameter are invalid!!!\n\n')
             else:

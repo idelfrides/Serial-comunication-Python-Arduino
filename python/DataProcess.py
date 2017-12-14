@@ -8,6 +8,7 @@ import json
 
 class DataProcess(object):
     temperatura = -1
+    tempoPadrao = 5
     info = """
          Informação sobre app  kkkk
          hhhhhh ooooo nnnn jjjjj

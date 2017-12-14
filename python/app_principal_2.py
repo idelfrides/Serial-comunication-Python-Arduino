@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# Copyright (c) 2017 Engineer IDELFRIDES JORGE
 
 __author__ = 'IDELFRIDES JORGE'
+# Copyright (c) 2017 Engineer IDELFRIDES JORGE
 
 # Written with python 2.7.14 | mongoDB-3.4.10 | pymongo-3.6
 # A python script connecting to a MongoDB given a MongoDB Connection URI.
