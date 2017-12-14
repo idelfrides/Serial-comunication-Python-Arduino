@@ -66,13 +66,18 @@ class ModulePyCloudMongo:
                 return 0
         else: # recuperar o tempo de resposta: idCollec = 4
             # docum = db.get_collection('controle').find({"tempo":{$gte:5}})
-            docum = db.get_collection('controle').find().pretty()
-            d = dict(docum)
-            mpao = Mpa.ModuloPyArduino()
-            mpao.tempoAtual = d.get('tempo')
+            try:
+                docum = db.get_collection('controle').find().pretty()
+                d = dict(docum)
+                mpao = Mpa.ModuloPyArduino()
+                mpao.tempoAtual = d.get('tempo')
+            except IOError:
+                print("\n\n Erro na selecao de documentos da colecao controle")
+                self.closeCMConection()
+                return 0
 
 
-    # -----------------------------------------------------------------------------------
+    # --------------------------------------------------------------------------------
     # The method wich close conection with remote cloud mongodb server
     def closeCMConection(self):
         global client

@@ -112,7 +112,7 @@ class ModuloPyArduino(object):
             t.sleep(dpo.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
 
             # ------------------------------------------------------------
-            #      Recuperando dados coletados pelo arduino
+            #   Recuperando dados coletados pelo arduino
             # ------------------------------------------------------------
             datadht = self.get_data_arduino2py(condht)
             t.sleep(2)
@@ -226,7 +226,7 @@ class ModuloPyArduino(object):
             print("\n\n WARNNING: The parameter given is not valid.\n\n The stage of this parameter can't be definided!!!")
             return 0
 
-    # -----------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     @staticmethod
     def send_data_py2cloud():
         f = open('controle.json', 'r')
@@ -234,7 +234,7 @@ class ModuloPyArduino(object):
         print(d)
         """ como eu mando dados para nuvem usando python ?"""
 
-    # -----------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------
     def sinalizador(self):
         pass
 
