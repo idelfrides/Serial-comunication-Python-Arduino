@@ -2,7 +2,7 @@
 #include "DHT.h"
 
 /* Definição de portas */
-#define DHTPIN 2    // what pin we're connected to
+#define DHTPIN 2    
 #define umidPin 2
 #define soilPin A0
 
@@ -23,9 +23,10 @@ DHT dhtUmid(umidPin, DHTTYPE);
    taxa de transmissão e inicializando a leitura */
 void setup() {
   Serial.begin(9600);
- /* Serial.println("\n\n DHT11 AND SOIL MOISTURE SENSORS TEST\n");
+  Serial.println("\n\n DHT11 AND SOIL MOISTURE SENSORS TEST\n");
   Serial.print("****************************************\n\n");
-  */
+  
+  //pinMode(port_dht, INPUT);
   pinMode(umidPin, INPUT);
   pinMode(soilPin, INPUT);
 
@@ -45,9 +46,10 @@ void loop() {
   data_dht = dht.readTemperature();       // celcius
   data_umid = dhtUmid.readHumidity();  
   data_soil = analogRead(soilPin);
+  data_dht_f = dht.readTemperature(true); // Fahrenheit
 
-  /* verificação de dados lidos*/
-  if (isnan(data_dht) || isnan(data_umid)){
+   /* verificação de dados lidos*/
+  if (isnan(data_dht) || isnan(data_umid) || isnan(data_dht_f)){
     Serial.println("\nFailed to read from DHT sensor!");
     return;
   }
@@ -56,12 +58,22 @@ void loop() {
     return;
   }else{
     /* impressão via monitor serial */
+    
+    /*Serial.print("\n TEMP FAHRENHEIT: "); 
+    Serial.println(data_dht_f); 
+    delay(2000); */
+   
+    Serial.print("\n TEMP CELCIUS: "); 
     Serial.println(data_dht); 
-    delay(2000);    
+    delay(2000);
+    
+    Serial.print(" UMID: "); 
     Serial.println(data_umid);
     delay(2000);
-    Serial.println(data_soil);    
-    
+
+    Serial.print(" UMID SOLO: "); 
+    Serial.println(data_soil);
+    Serial.print("\n-----------------------------");
   }
   
 }
