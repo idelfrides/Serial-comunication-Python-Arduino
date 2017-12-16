@@ -4,11 +4,14 @@
 import os
 import random as r
 import json
+import ModuloPyArduino as Mpa
 
 
 class DataProcess(object):
+    mpao = Mpa.ModuloPyArduino()
     temperatura = -1
-    tempoPadrao = 5
+    tempoPadrao = 300  # o tempo é dado em segundos: 300s = 5min
+
     info = """
          Informação sobre app  kkkk
          hhhhhh ooooo nnnn jjjjj
@@ -67,6 +70,11 @@ class DataProcess(object):
     # @staticmethod
     def limpa_tela(self):
         os.system('cls' if os.name == 'nt' else 'clear')
+
+
+    def converserTempo(self, tempo):
+        return 60 * tempo
+
 
     @staticmethod
     def menu(param):

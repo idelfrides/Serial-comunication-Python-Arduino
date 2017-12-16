@@ -14,6 +14,7 @@ __author__ = 'IDELFRIDES JORGE'
 # ---------------------------------------------------------------
 import pymongo as pym
 import ModuloPyArduino as Mpa
+import DataProcess as Dp
 
 
 class ModulePyCloudMongo:
@@ -64,13 +65,16 @@ class ModulePyCloudMongo:
                 print("\n\n Erro de insersao de dados na colecao controle2")
                 self.closeCMConection()
                 return 0
-        else: # recuperar o tempo de resposta: idCollec = 4
-            # docum = db.get_collection('controle').find({"tempo":{$gte:5}})
+        else:   # recuperar o tempo de resposta: idCollec = 4
+                # docum = db.get_collection('controle').find({"tempo":{$gte:5}})
             try:
                 docum = db.get_collection('controle').find().pretty()
                 d = dict(docum)
                 mpao = Mpa.ModuloPyArduino()
-                mpao.tempoAtual = d.get('tempo')
+                tempoAl = d.get('tempo')
+
+                dpo = Dp.DataProcess()
+                mpao.tempoAtual = dpo.converserTempo(tempoAl)
             except IOError:
                 print("\n\n Erro na selecao de documentos da colecao controle")
                 self.closeCMConection()

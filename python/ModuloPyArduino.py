@@ -10,7 +10,7 @@ import ModulePyCloudMongo as Mpcm
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
-    tempoAtual = 5
+    tempoAtual = 300  # o tempo é dado em segundos: 300s = 5min
     info = """
           Informação sobre app vai aqui
           ppppppppp sssss kkkk frrrr eee
@@ -32,8 +32,8 @@ class ModuloPyArduino(object):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
         # porta_soil = "COM3"
-        porta_dht = 'COM4'
-        # porta_umid = 'COM5'
+        porta_dht = 'COM6'
+        # porta_umid = 'COM6'
         # porta_pista_led = 'COM3'
         speed = 9600
         # return porta_dht, porta_umid, porta_soil, speed
@@ -60,9 +60,11 @@ class ModuloPyArduino(object):
         try:
             ser = s.Serial(p, v)
         except IOError:
-            print"\n Erro ao abrir a conexao. Porta já sem uso:  ", ser.name
-            print "\n\n The application will be quited!!!\n\n\n"
+            print"\n Erro ao abrir a conexao. Porta já sem uso:  "
+            print "\n\n The application will be quited in 5 s!!!\n\n\n"
+            t.sleep(5)
             exit(0)
+            # return 0
 
     # ------------------------------------------------------------------------------
     def menu(self):
@@ -166,7 +168,7 @@ class ModuloPyArduino(object):
                     # insert data into collection dataNumSensores
                     mpcmo.handleCloudMongoData(uri, port, 'controle.json', 3)
 
-                    # Check and get the responde time
+                    # Check and get the responde time seted by user through web application
                     self.tempoAtual = mpcmo.handleCloudMongoData(uri, port, 'controle.json', 4)
                     if self.tempoAtual != dpo.tempoPadrao:
                          dpo.tempoPadrao = self.tempoAtual
@@ -188,8 +190,8 @@ class ModuloPyArduino(object):
 
     # ------------------------------------------------------------------------------
     def validate_sensor_data(self, param, valor):
-        refval_dht = 30     # referência, média de temperatura relativa
-        refval_umi = 30     # referência, média de umidade relativa
+        refval_dht = 30       # referência, média de temperatura relativa
+        refval_umi = 30       # referência, média de umidade relativa
         # refval_soil = 20    # referência, média de umidade solo
 
         if param == "temperatura":

@@ -24,7 +24,7 @@ def main_aplication():
     beforeState = 0
     correntState = 0
 
-    print("\n\n Eu sou principal")
+    print("\n\n Eu sou principal TESTE")
 
     # -----------------------------------------------------------
     #       Instanciando objetos das classes ModuloPyArduino
@@ -42,48 +42,59 @@ def main_aplication():
     #       Configurçaão do arduino: portas velocidade
     # -----------------------------------------------------------
     # psoil, v = p_a.config_arduino()
-    pdht, pumid, psoil, v = p_a.config_arduino()
+    # pumid, psoil,
+    pdht, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
     #           Conexoa com arduino
     # -----------------------------------------------------------
     # con_s = p_a.set_conection(ps, v)
-    con_dht = p_a.set_conection(pdht, v)
-    con_umid = p_a.set_conection(pumid, v)
-    con_soil = p_a.set_conection(psoil, v)
+    con_dht = p_a.set_conection2(pdht, v)
+    # con_umid = p_a.set_conection(pumid, v)
+    # con_soil = p_a.set_conection(psoil, v)
 
     # p_a.serial_loop_app(con_soil, loop)
+
+    x = 1
+    while x < 10:
+        dado = p_a.get_data_arduino2py(con_dht)
+        print("\n Arduino leu:  ", dado)
+        x += 1
+        t.sleep(2)
+
+    con_dht.close()
+
 
     # con_soil.close()
 
     # ------------------------------------------------------------
     #      Recuperando dados coletados pelo arduino
     # ------------------------------------------------------------
-    datadht = p_a.get_data_arduino2py(con_dht)
-    dataumid = p_a.get_data_arduino2py(con_umid)
-    datasoil = p_a.get_data_arduino2py(con_soil)
+    # datadht = p_a.get_data_arduino2py(con_dht)
+    # dataumid = p_a.get_data_arduino2py(con_umid)
+    # datasoil = p_a.get_data_arduino2py(con_soil)
 
     # print('\n\n Deu certo\n\n valores nao verificados')
     # print(datasoil)
 
-    close_all_conection()
-    t.sleep(2)
+    # close_all_conection()
+    # t.sleep(2)
 
     # ------------------------------------------------------------------
     #  Verify and Management  of the data obteined by arduino board
     # ------------------------------------------------------------------
-    datadht_verified = p_a.validate_sensor_data('temperatura', datadht)
-    dataumid_verified = p_a.validate_sensor_data('umidade', dataumid)
-    datasoil_verified = p_a.validate_sensor_data('umidade solo', datasoil)
+    # datadht_verified = p_a.validate_sensor_data('temperatura', datadht)
+    # dataumid_verified = p_a.validate_sensor_data('umidade', dataumid)
+    # datasoil_verified = p_a.validate_sensor_data('umidade solo', datasoil)
 
-    if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
-        print('\n\n Deu certo\n\n valores verificados')
-        print(datadht_verified, datasoil_verified, dataumid_verified)
-        print(datasoil_verified)
-
-        print('\n\n Deu certo\n\n valores nao verificados')
-        print(datasoil)
-        print(datadht, datasoil, dataumid)
+    # if datadht_verified != 'indefinido' and dataumid_verified != 'indefinido':
+    #     print('\n\n Deu certo\n\n valores verificados')
+    #     print(datadht_verified, datasoil_verified, dataumid_verified)
+    #     print(datasoil_verified)
+    #
+    #     print('\n\n Deu certo\n\n valores nao verificados')
+    #     print(datasoil)
+    #     print(datadht, datasoil, dataumid)
 
         # -------------------------------------------------------------
         # Call a method to send data to cloud mongoDB DB --> not implementded yet
@@ -95,15 +106,15 @@ def main_aplication():
 
         # Recupera o estado atual da plantação por meio dos parãmetros
         # temperatura, umidade e umidade do solo
-        correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
-        sno = correntState
+        # correntState = dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
+        # sno = correntState
 
-        if correntState != beforeState:
-            dpo.formataArquivoControle(1, 1, sno)
-            beforeState = correntState
-        else:
-            sno = beforeState
-            dpo.formataArquivoControle(1, 0, sno)
+        # if correntState != beforeState:
+        #     dpo.formataArquivoControle(1, 1, sno)
+        #     beforeState = correntState
+        # else:
+        #     sno = beforeState
+        #    dpo.formataArquivoControle(1, 0, sno)
             # dpo.formataArquivoControle(1, 0, beforeState)
 
 
@@ -119,12 +130,12 @@ def main_aplication():
         # -------------------------------------------------------------
         # dpo.define_disease(datadht_verified, dataumid_verified, datasoil_verified)
 
-        close_all_conection()
-        t.sleep(1)
-    else:
-        print('\n\n One or more values of parameter are invalid\n\n')
-        close_all_conection()
-        t.sleep(1)
+    #     close_all_conection()
+    #     t.sleep(1)
+    # else:
+    #     print('\n\n One or more values of parameter are invalid\n\n')
+    #     close_all_conection()
+    #     t.sleep(1)
 
 
 def close_all_conection():
@@ -159,4 +170,5 @@ def run_app(rodar):
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
-    run_app(1)
+    # run_app(1)
+    main_aplication()
