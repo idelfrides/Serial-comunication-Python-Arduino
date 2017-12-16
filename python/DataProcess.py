@@ -72,7 +72,7 @@ class DataProcess(object):
         os.system('cls' if os.name == 'nt' else 'clear')
 
 
-    def converserTempo(self, tempo):
+    def converterTempo(self, tempo):
         return 60 * tempo
 
 

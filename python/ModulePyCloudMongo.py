@@ -71,10 +71,10 @@ class ModulePyCloudMongo:
                 docum = db.get_collection('controle').find().pretty()
                 d = dict(docum)
                 mpao = Mpa.ModuloPyArduino()
-                tempoAl = d.get('tempo')
+                tempoAt = d.get('tempo')  # recupera o valor do campo tempo
 
                 dpo = Dp.DataProcess()
-                mpao.tempoAtual = dpo.converserTempo(tempoAl)
+                mpao.tempoAtual = dpo.converterTempo(tempoAt)
             except IOError:
                 print("\n\n Erro na selecao de documentos da colecao controle")
                 self.closeCMConection()
