@@ -55,6 +55,10 @@ def main_aplication(loop):
     print("\n\n Apliacacao ENCERRADA")
 
 
+
+# ----------------------------------------------------------------
+#  This is the method which close all Arduino board conections
+# ----------------------------------------------------------------
 def close_all_conection():
     global con_s
     global con_dht
@@ -67,9 +71,9 @@ def close_all_conection():
     con_umid.close()
 
 
-# ---------------------------------------------------------
+# -----------------------------------------------------------
 #  This is the method which start running tha application
-# ---------------------------------------------------------
+# -----------------------------------------------------------
 def run_application(rodar):
 
     while rodar == 1:
