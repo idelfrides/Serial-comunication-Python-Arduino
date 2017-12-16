@@ -169,7 +169,7 @@ class ModuloPyArduino(object):
                     mpcmo.handleCloudMongoData(uri, port, 'controle.json', 3)
 
                     # Check and get the responde time seted by user through web application
-                    self.tempoAtual = mpcmo.handleCloudMongoData(uri, port, 'controle.json', 4)
+                    mpcmo.handleCloudMongoData(uri, port, 'controle.json', 4)
                     if self.tempoAtual != dpo.tempoPadrao:
                          dpo.tempoPadrao = self.tempoAtual
 

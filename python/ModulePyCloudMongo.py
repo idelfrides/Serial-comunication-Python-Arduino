@@ -48,7 +48,8 @@ class ModulePyCloudMongo:
             except IOError:
                 print("\n\n Erro de insersao de dados na colecao dadosNumSensores2")
                 self.closeCMConection()
-                return 0
+                exit(0)
+
         elif idCollec == 2: # dadosVerificSensores2
             dadosVerificSensores2 = db['dadosVerificSensores2']
             try:
@@ -56,7 +57,8 @@ class ModulePyCloudMongo:
             except IOError:
                 print("\n\n Erro de insersao de dados na colecao dadosVerificSensores2")
                 self.closeCMConection()
-                return 0
+                exit(0)
+
         elif idCollec == 3: # controle2
             controle2 = db['controle2']
             try:
@@ -64,7 +66,8 @@ class ModulePyCloudMongo:
             except IOError:
                 print("\n\n Erro de insersao de dados na colecao controle2")
                 self.closeCMConection()
-                return 0
+                exit(0)
+
         else:   # recuperar o tempo de resposta: idCollec = 4
                 # docum = db.get_collection('controle').find({"tempo":{$gte:5}})
             try:
@@ -78,7 +81,7 @@ class ModulePyCloudMongo:
             except IOError:
                 print("\n\n Erro na selecao de documentos da colecao controle")
                 self.closeCMConection()
-                return 0
+                exit(0)
 
 
     # --------------------------------------------------------------------------------
