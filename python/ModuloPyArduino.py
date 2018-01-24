@@ -106,6 +106,7 @@ class ModuloPyArduino(object):
         beforeState = 0
         correntState = 0
 
+        # creating object of DataProcess and ModulePyCloudMongo classes: dpo, mpcmo
         dpo = Mdp.DataProcess()
         mpcmo = Mpcm.ModulePyCloudMongo()
 
@@ -122,11 +123,11 @@ class ModuloPyArduino(object):
             t.sleep(2)
             datasoil = self.get_data_arduino2py(consoil)
 
-            # verifica se os dados lidos são unméricos ou não
+            # verifica se os dados lidos são numéricos ou não
             checkData = self.validaTipoDado(datadht, dataumid, datasoil)
 
             # ------------------------------------------------------------------
-            #  Verify and Management  of the data obteined by arduino board
+            #  Verify and Management of the data obteined by arduino board
             # ------------------------------------------------------------------
             if checkData == 1:
                 datadht_verified = self.validate_sensor_data('temperatura', datadht)
@@ -137,9 +138,9 @@ class ModuloPyArduino(object):
 
                     # ----------------------------------------------------------
                     # format json data files: 1 - numerical received data
-                    # 2 - virified data
+                    #                         2 - virified data
                     # ----------------------------------------------------------
-                    dpo.formataArquivo(datadht, dataumid, datasoil, 1)   #1
+                    dpo.formataArquivo(datadht, dataumid, datasoil, 1)   #1: dados numericos
                     dpo.formataArquivo(datadht_verified, dataumid_verified, datasoil_verified, 2) #2
 
                     # Recupera o estado atual da plantação por meio dos parâmetros -
@@ -156,7 +157,7 @@ class ModuloPyArduino(object):
                     # -------------------------------------------------------------
                     #   Call a method to send data to cloud mongoDB DB
                     # -------------------------------------------------------------
-                    # opening a conection with cloud mongo remote server
+                    # opening a conection with a remote cloud mongo server
                     uri, port = mpcmo.configCloudMongoSC()
 
                     # insert data into collection dataNumSensores
@@ -168,7 +169,7 @@ class ModuloPyArduino(object):
                     # insert data into collection dataNumSensores
                     mpcmo.handleCloudMongoData(uri, port, 'controle.json', 3)
 
-                    # Check and get the responde time seted by user through web application
+                    # Check and get the response time seted by user through web application
                     mpcmo.handleCloudMongoData(uri, port, 'controle.json', 4)
 
                     # verifica a compatibilidade dos tempos
@@ -183,10 +184,10 @@ class ModuloPyArduino(object):
                 print("\n\n Falha de leitura do SENSOR DHT11 e/ou SOIL MISURE\n\n")
 
 
-    # ------------------------------------------------------------------------------
+    # -----------------------------------------------------------------------------
     def validaTipoDado(self, d1, d2, d3):
         if type(d1) != str and type(d2) != str and type(d3) != str:
-            return 1  # leitura realizada com sucesso
+            return 1  # leitura realizada com sucesso, dados numéricos
         else:
             return 0  # leitura realizada com falha
 

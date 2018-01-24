@@ -63,7 +63,7 @@ void loop() {
     Serial.println(data_dht_f); 
     delay(2000); */
    
-    Serial.print("\n TEMP CELCIUS: "); 
+    Serial.print("\n TEMP CELSIUS: "); 
     Serial.println(data_dht); 
     delay(2000);
     

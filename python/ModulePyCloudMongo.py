@@ -10,7 +10,7 @@ __author__ = 'IDELFRIDES JORGE'
 # A python script connecting to a MongoDB given a MongoDB Connection URI.
 
 # ---------------------------------------------------------------
-#      Importing classes to help the main method of this app
+#      Importing classes to help the main method of this class
 # ---------------------------------------------------------------
 import pymongo as pym
 import ModuloPyArduino as Mpa
@@ -27,7 +27,6 @@ class ModulePyCloudMongo:
     def configCloudMongoSC(self):
         uri = 'mongodb://wmfarmdb:wmfarmdb17@ds033186.mlab.com:33186/farmdb'
         hostPort = 33186
-
         return uri, hostPort
 
     # ---------------------------------------------------------------------------
@@ -37,11 +36,11 @@ class ModulePyCloudMongo:
 
         db = client.get_database()
 
-        print" \n DB ctructure:  ", db
+        print" \n DB structure:  ", db
         print" \n DB name:  ", db.name
         print" \n Collection client: ", db.client
 
-        if idCollec == 1: # dadosNumSensores2
+        if idCollec == 1:        # dadosNumSensores2
             dadosNumSensores2 = db['dadosNumSensores2']
             try:
                 dadosNumSensores2.insert(file_data)
@@ -50,7 +49,7 @@ class ModulePyCloudMongo:
                 self.closeCMConection()
                 exit(0)
 
-        elif idCollec == 2: # dadosVerificSensores2
+        elif idCollec == 2:      # dadosVerificSensores2
             dadosVerificSensores2 = db['dadosVerificSensores2']
             try:
                 dadosVerificSensores2.insert(file_data)

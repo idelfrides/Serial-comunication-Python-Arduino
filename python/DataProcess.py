@@ -104,7 +104,7 @@ class DataProcess(object):
         f.close()
 
     def createColectionDataSensor(self, data, cod):
-        if cod == 1:
+        if cod == 1:   # numeric data
             try:
                 f = open('datanumsensor.json', 'w')
                 f.write(data)
@@ -113,7 +113,7 @@ class DataProcess(object):
                 print("\n\n I/O Error: Can not open file datanumsensor.json")
                 print "\n\n The application will be quited!!!\n\n\n"
                 exit(0)
-        elif cod == 2:
+        elif cod == 2:       # dados em caracteres
             try:
                 f = open('datacaracsensor.json', 'w')
                 f.write(data)
@@ -122,7 +122,6 @@ class DataProcess(object):
                 print("\n\n I/O Error: Can not open file datacaracsensor.json")
                 print "\n\n The application will be quited!!!\n\n\n"
                 exit(0)
-
 
 
     def createColectionControle(self, data):
@@ -139,16 +138,13 @@ class DataProcess(object):
         # d = f.read()
         # f.close()
 
-
     def formataArquivo(self, d1, d2, d3, collec):
         d = json.dumps({'temperatura': d1, 'umidade': d2, 'umidade solo': d3}, sort_keys=True, indent=4, separators=(',', ':'))
         self.createColectionDataSensor(d, collec)
 
-
     def formataArquivoControle(self, update, change, sno):
         dj = json.dumps({'Update': update, 'Change': change, 'SNO': sno}, sort_keys=True, indent=4, separators=(',', ':'))
         self.createColectionControle(dj)
-
 
     # @staticmethod
     def define_disease(self, t, h, s):
@@ -180,7 +176,6 @@ class DataProcess(object):
         else:
             print("\n\n Combinação de parâmetros invalida. \n Aplicação será encerrada!!\n\n")
             return 0
-
 
     def define_disease_table_data(self, t, h, s):
         """ define a disease under the atributes

@@ -22,7 +22,7 @@ def main_aplication(loop):
     print("\n\n Eu sou principal")
 
     # -----------------------------------------------------------
-    #       Instanciando objeto da classe ModuloPyArduino
+    #       Instanciando objeto da classe ModuloPyArduino: p_a
     # -----------------------------------------------------------
     p_a = Mpa.ModuloPyArduino()
 
@@ -87,8 +87,8 @@ def run_application(rodar):
 
 # ---------------------------------------------------------
 #  Calling de main method to start the application
-#  1 ->  executando
-#  0 ->  parado
+#  1 ->  the app is running
+#  0 ->  the is stoped
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
