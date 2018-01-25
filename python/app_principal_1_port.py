@@ -14,12 +14,14 @@ __author__ = 'IDELFRIDES JORGE'
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
 import time as t
+
+
 # ---------------------------------------------------------------
 #   Main application witch controll the application
 # ---------------------------------------------------------------
-def main_aplication(loop):
+def main_aplication_1p(loop):
 
-    print("\n\n Eu sou principal")
+    print("\n\n Eu sou principal kkkkkkkkkkkkkkkkk")
 
     # -----------------------------------------------------------
     #       Instanciando objeto da classe ModuloPyArduino: p_a
@@ -88,7 +90,7 @@ def run_application(rodar):
 
     while rodar == 1:
         print("\n\n Apliacacao em execucao...\n\n ")
-        main_aplication(rodar)
+        main_aplication_1p(rodar)
         close_all_conection()
 
     print("\n\n Apliacacao ENCERRADA")
@@ -100,5 +102,5 @@ def run_application(rodar):
 #  0 ->  the is stoped
 # ---------------------------------------------------------
 
-if __name__ == '__main__':
-    main_aplication(1)
+# if __name__ == '__main__':
+main_aplication_1p(5)
