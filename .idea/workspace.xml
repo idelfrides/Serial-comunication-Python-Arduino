@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" />
-      <change beforePath="$PROJECT_DIR$/python/DataProcess.py" afterPath="$PROJECT_DIR$/python/DataProcess.py" />
-      <change beforePath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" afterPath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/python/app_principal-one-port.py" />
       <change beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+      <change beforePath="$PROJECT_DIR$/python/app_principal.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/python/app_principal_2.py" afterPath="$PROJECT_DIR$/python/app_principal_2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,20 +38,32 @@
       <file leaf-file-name="app_principal_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/app_principal_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="261" column="35" lean-forward="true" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#42#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_principal-one-port.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="489">
+              <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <element signature="e#471#500#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,14 +72,24 @@
       <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
                 <element signature="e#2001#2017#0" expanded="false" />
                 <element signature="e#2073#2121#0" expanded="false" />
                 <element signature="e#2236#2852#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/my_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,10 +126,11 @@
         <option value="$PROJECT_DIR$/python/exper_arquivos.py" />
         <option value="$PROJECT_DIR$/python/TesteCloudMongo.py" />
         <option value="$PROJECT_DIR$/python/app_principal.py" />
-        <option value="$PROJECT_DIR$/python/app_principal_2.py" />
         <option value="$PROJECT_DIR$/python/DataProcess.py" />
         <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
         <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+        <option value="$PROJECT_DIR$/python/app_principal_2.py" />
+        <option value="$PROJECT_DIR$/python/app_principal-one-port.py" />
       </list>
     </option>
   </component>
@@ -245,7 +264,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="py-arduino" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/app_principal.py" />
+      <option name="SCRIPT_NAME" value="D:\ESTAGIO-SUPER\py-arduino\Serial-comunication-Python-Arduino\python\app_principal-one-port.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,11 +381,11 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43785632" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4526796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16004297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16004297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24758324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24758324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4127708" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -466,7 +485,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
@@ -529,7 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -584,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -631,7 +650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4650">
           <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
@@ -676,7 +695,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4650">
           <caret line="157" column="0" lean-forward="true" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
@@ -711,14 +730,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1960">
           <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1960">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
@@ -739,28 +758,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -830,34 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="26" column="38" lean-forward="false" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/my_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" expanded="false" />
-            <element signature="e#2073#2121#0" expanded="false" />
-            <element signature="e#2236#2852#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
@@ -868,20 +859,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python/my_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+            <element signature="e#2001#2017#0" expanded="false" />
+            <element signature="e#2073#2121#0" expanded="false" />
+            <element signature="e#2236#2852#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="261" column="35" lean-forward="true" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#42#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="e#471#500#0" expanded="true" />
           </folding>
         </state>
       </provider>

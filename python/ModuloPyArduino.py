@@ -31,13 +31,13 @@ class ModuloPyArduino(object):
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
-        # porta_soil = "COM3"
+        porta_soil = "COM6"
         porta_dht = 'COM6'
-        # porta_umid = 'COM6'
+        porta_umid = 'COM6'
         # porta_pista_led = 'COM3'
         speed = 9600
-        # return porta_dht, porta_umid, porta_soil, speed
-        return porta_dht, speed
+        return porta_dht, porta_umid, porta_soil, speed
+        # return porta_dht, speed
 
     # ------------------------------------------------------------------------------
     def set_conection(self, p, v):

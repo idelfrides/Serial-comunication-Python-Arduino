@@ -13,6 +13,8 @@ __author__ = 'IDELFRIDES JORGE'
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
+import time as t
+import numpy as np
 
 # ---------------------------------------------------------------
 #   Main application witch controll the application
@@ -35,23 +37,31 @@ def main_aplication(loop):
     #       Configurção do arduino: portas e velocidade
     # -----------------------------------------------------------
 
-    pdht, pumid, psoil, v = p_a.config_arduino()
+    # pdht, pumid, psoil, v = p_a.config_arduino()
+    pdht, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
     #           Conexão com arduino: 1 or 2
     # -----------------------------------------------------------
+    # con_s = p_a.set_conection(ps, v)
     con_dht = p_a.set_conection2(pdht, v)
-    con_umid = p_a.set_conection2(pumid, v)
-    con_soil = p_a.set_conection2(psoil, v)
+    # con_umid = p_a.set_conection(pumid, v)
+    # con_soil = p_a.set_conection(psoil, v)
 
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,
     # setting up it and send it to the cloud mongoDB
     #------------------------------------------------------------
-    p_a.serialLoopApp(con_dht, con_umid, con_soil, loop)
+    # p_a.serialLoopApp(con_dht, con_umid, con_soil, loop)
+    i = 0
+    while i < loop:
+        dataArd = p_a.get_data_arduino2py(con_dht)
+        print"\n\n Python leu: ", dataArd
+        i +=1
+        t.sleep(2)
 
-    close_all_conection()
-    print("\n\n Apliacacao ENCERRADA")
+    # close_all_conection()
+    # print("\n\n Apliacacao ENCERRADA")
 
 
 
@@ -78,9 +88,14 @@ def run_application(rodar):
     while rodar == 1:
         print("\n\n Apliacacao em execucao...\n\n ")
         main_aplication(rodar)
-        close_all_conection()
+        t.sleep(3)
 
+
+    # ending the app
+    close_all_conection()
     print("\n\n Apliacacao ENCERRADA")
+    t.sleep(4)
+    exit(1)
 
 
 # ---------------------------------------------------------
@@ -90,4 +105,4 @@ def run_application(rodar):
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
-    main_aplication(1)
+    main_aplication(5)
