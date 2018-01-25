@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" />
-      <change beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" />
-      <change beforePath="$PROJECT_DIR$/python/app_principal-one-port.py" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/python/app_principal_1_port.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,12 +33,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app_principal_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app_principal_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/app_principal_2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_principal_1_port.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/app_principal_1_port.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="e#471#500#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,6 +119,7 @@
         <option value="$PROJECT_DIR$/python/app_principal_2.py" />
         <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
         <option value="$PROJECT_DIR$/python/app_principal-one-port.py" />
+        <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
       </list>
     </option>
   </component>
@@ -443,16 +453,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <element signature="e#455#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -871,6 +871,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/app_principal_1_port.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#471#500#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
