@@ -1,4 +1,4 @@
-/* inclisão de bibliotecas */
+  /* inclisão de bibliotecas */
 #include "DHT.h"
 
 /* Definição de portas */
@@ -74,7 +74,7 @@ void loop() {
     Serial.print(" UMID SOLO: "); 
     Serial.println(data_soil);
     */
-    Serial.print("\n-----------------------------");
+    //Serial.print("\n-----------------------------");
     
   }
   

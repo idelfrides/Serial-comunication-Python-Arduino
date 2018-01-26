@@ -93,7 +93,7 @@ def run_application(rodar):
         main_aplication_1p(rodar)
         close_all_conection()
 
-    print("\n\n Apliacacao ENCERRADA")
+    print("\n\n Apliacacao ENCERRADA")  
 
 
 # ---------------------------------------------------------
