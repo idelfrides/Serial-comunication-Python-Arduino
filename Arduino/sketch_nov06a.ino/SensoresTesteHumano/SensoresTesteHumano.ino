@@ -65,16 +65,16 @@ void loop() {
    
     Serial.print("\n TEMP CELSIUS: "); 
     Serial.println(data_dht); 
-    delay(2000);
-    /*
-    Serial.print(" UMID: "); 
+    /*delay(1000);*/
+    
+    Serial.print(" UMID RELATIVA: "); 
     Serial.println(data_umid);
-    delay(2000);
+    //delay(2000);
 
     Serial.print(" UMID SOLO: "); 
     Serial.println(data_soil);
-    */
-    //Serial.print("\n-----------------------------");
+    
+    Serial.print("\n-----------------------------");
     
   }
   

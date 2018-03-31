@@ -19,16 +19,12 @@ float data_dht_f = 0;
 DHT dht(DHTPIN, DHTTYPE);
 DHT dhtUmid(umidPin, DHTTYPE);
 
-/* Configuração de pinos de entrada de dados e
+/* Configuração de pinos de entrada de dados,
    taxa de transmissão e inicializando a leitura */
 void setup() {
   Serial.begin(9600);
- /* Serial.println("\n\n DHT11 AND SOIL MOISTURE SENSORS TEST\n");
-  Serial.print("****************************************\n\n");
-  */
   pinMode(umidPin, INPUT);
   pinMode(soilPin, INPUT);
-
   dht.begin();
   dhtUmid.begin();
 }
@@ -36,8 +32,8 @@ void setup() {
 /* Leitura e captura contínua de dados 
    enviados pelos sensores - loop() 
    O método delay(ms) é dado em milisegundos.
-   1 ms = 0.001 s = 1.10^-3 
-   Espera por 5 s entre cada medidas/leitura */
+   1ms = 0.001s = 1.10^-3 
+   Espera por 5 s entre cada medida/leitura */
 void loop() {
   delay(5000); 
   
@@ -58,9 +54,9 @@ void loop() {
     /* impressão via monitor serial */
     Serial.println(data_dht); 
     delay(2000);    
-    Serial.println(data_umid);
+    /*Serial.println(data_umid);
     delay(2000);
-    Serial.println(data_soil);    
+    Serial.println(data_soil);  */  
   }
   
 }

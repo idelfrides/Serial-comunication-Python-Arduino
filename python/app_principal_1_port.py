@@ -21,7 +21,7 @@ import time as t
 # ---------------------------------------------------------------
 def main_aplication_1p(loop):
 
-    print("\n\n Eu sou principal kkkkkkkkkkkkkkkkk")
+    print("\n\n Eu sou principal port 1 kkkkkkkkkkkkkkkkk")
 
     # -----------------------------------------------------------
     #       Instanciando objeto da classe ModuloPyArduino: p_a
@@ -34,7 +34,7 @@ def main_aplication_1p(loop):
     p_a.appInfo()
 
     # -----------------------------------------------------------
-    #       Configurção do arduino: portas e velocidade
+    #       Configurção do arduino: porta e velocidade
     # -----------------------------------------------------------
 
     pdht, v = p_a.config_arduino()
@@ -84,7 +84,7 @@ def close_all_conection():
 
 
 # -----------------------------------------------------------
-#  This is the method which start running tha application
+#  This is the method start running tha application
 # -----------------------------------------------------------
 def run_application(rodar):
 
@@ -99,8 +99,8 @@ def run_application(rodar):
 # ---------------------------------------------------------
 #  Calling de main method to start the application
 #  1 ->  the app is running
-#  0 ->  the is stoped
+#  0 ->  the is stoped/quited
 # ---------------------------------------------------------
 
-# if __name__ == '__main__':
-main_aplication_1p(5)
+if __name__ == '__main__':
+    main_aplication_1p(3)

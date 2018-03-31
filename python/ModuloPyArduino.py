@@ -41,21 +41,22 @@ class ModuloPyArduino(object):
 
     # ------------------------------------------------------------------------------
     def set_conection(self, p, v):
-        ser = s.Serial(p, v)
-        print"\n porta em uso antes de teste: ", ser.name
+        seri = s.Serial(p, v)
+        print"\n porta em uso antes de teste: ", seri.name
 
-        if not ser.isOpen():
-            return ser.open()
+        if not seri.isOpen():
+            return seri.open()
         else:
-            print"\n porta em uso ? ", ser.isOpen()
-            print"\n porta em uso: ", ser.name
-            print"\n Dump de config: ", ser
+            print"\n porta em uso ? ", seri.isOpen()
+            print"\n porta em uso: ", seri.name
+            print"\n Dump de config: ", seri
             # ser.close()
             t.sleep(10)
             # ser2 = s.Serial(p, v)
-            return ser
+            return seri
 
     # ------------------------------------------------------------------------------
+    # setting conectiong with exception
     def set_conection2(self, p, v):
         try:
             ser = s.Serial(p, v)
@@ -64,7 +65,6 @@ class ModuloPyArduino(object):
             print "\n\n The application will be quited in 5 s!!!\n\n\n"
             t.sleep(5)
             exit(0)
-            # return 0
 
     # ------------------------------------------------------------------------------
     def menu(self):
