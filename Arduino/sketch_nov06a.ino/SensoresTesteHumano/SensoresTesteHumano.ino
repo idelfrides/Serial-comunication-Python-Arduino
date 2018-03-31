@@ -15,8 +15,6 @@ float data_umid = 0;
 float data_soil = 0;
 float data_dht_f = 0;
 
-float datawm = 10; 
-
 // Initialize DHT sensor for normal 16mhz Arduino
 DHT dht(DHTPIN, DHTTYPE);
 DHT dhtUmid(umidPin, DHTTYPE);
