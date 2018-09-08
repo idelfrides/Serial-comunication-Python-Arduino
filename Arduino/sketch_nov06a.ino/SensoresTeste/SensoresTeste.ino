@@ -1,4 +1,4 @@
-/* inclisão de bibliotecas */
+/* inclusão de bibliotecas */
 #include "DHT.h"
 
 /* Definição de portas */

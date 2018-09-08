@@ -1,4 +1,4 @@
-  /* inclisão de bibliotecas */
+ /* inclisão de bibliotecas */
 #include "DHT.h"
 
 /* Definição de portas */
@@ -30,6 +30,7 @@ void setup() {
   pinMode(umidPin, INPUT);
   pinMode(soilPin, INPUT);
 
+  // inicializa a leitura de dados 
   dht.begin();
   dhtUmid.begin();
 }
@@ -40,7 +41,7 @@ void setup() {
    1 ms = 0.001 s = 1.10^-3 
    Espera por 5 s entre cada medidas/leitura */
 void loop() {
-  delay(2000); 
+  delay(3000); 
   
   /* leitura de dados */
   data_dht = dht.readTemperature();       // celcius

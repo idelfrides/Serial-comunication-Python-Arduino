@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# date: 10/11/2017
+# Date: 10/11/2017
 
 __author__ = 'IDELFRIDES JORGE'
 # Copyright (c) 2017 Engineer IDELFRIDES JORGE
@@ -40,7 +40,7 @@ def main_aplication_1p(loop):
     pdht, v = p_a.config_arduino()
 
     # -----------------------------------------------------------
-    #           Conexão com arduino: 1 or 2
+    #       Conexão com arduino: 1 or 2
     # -----------------------------------------------------------
     con_dht = p_a.set_conection2(pdht, v)
     # con_umid = p_a.set_conection2(pumid, v)
@@ -49,13 +49,13 @@ def main_aplication_1p(loop):
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,
     # setting up it and send it to the cloud mongoDB
-    #------------------------------------------------------------
+    # ------------------------------------------------------------
     # p_a.serialLoopApp(con_dht, con_umid, con_soil, loop)
 
     i = 0
     while i < loop:
-        dataArd = p_a.get_data_arduino2py(con_dht)
-        print "\n\n Arduino leu:  ", dataArd
+        data_arduino = p_a.get_data_arduino2py(con_dht)
+        print "\n\n Arduino leu:  ", data_arduino
         i += 1
         t.sleep(2)
 
@@ -65,7 +65,6 @@ def main_aplication_1p(loop):
 
     # close_all_conection()
     # print("\n\n Apliacacao ENCERRADA")
-
 
 
 # ----------------------------------------------------------------
@@ -84,7 +83,7 @@ def close_all_conection():
 
 
 # -----------------------------------------------------------
-#  This is the method start running tha application
+#  This is the method starts running the application
 # -----------------------------------------------------------
 def run_application(rodar):
 
