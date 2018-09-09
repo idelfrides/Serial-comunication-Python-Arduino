@@ -21,7 +21,7 @@ import time as t
 # ---------------------------------------------------------------
 def main_aplication_1p(loop):
 
-    print("\n\n Eu sou principal port 1 kkkkkkkkkkkkkkkkk")
+    print("\n\n Eu sou principal port 1")
 
     # -----------------------------------------------------------
     #       Instanciando objeto da classe ModuloPyArduino: p_a
@@ -42,7 +42,7 @@ def main_aplication_1p(loop):
     # -----------------------------------------------------------
     #       Conexão com arduino: 1 or 2
     # -----------------------------------------------------------
-    con_dht = p_a.set_conection2(pdht, v)
+    con_dht = p_a.set_conection_exception(pdht, v)
     # con_umid = p_a.set_conection2(pumid, v)
     # con_soil = p_a.set_conection2(psoil, v)
 

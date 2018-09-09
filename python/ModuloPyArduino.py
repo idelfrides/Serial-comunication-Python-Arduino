@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+
 from mhlib import isnumeric
 
 import time as t
@@ -13,13 +14,14 @@ import ModulePyCloudMongo as Mpcm
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
-    tempoAtual = 300  # o tempo é dado em segundos: 300s = 5min
+    tempoAtual = 300  # o tempo eh dado em segundos: 300s = 5min
     info = """
           Informação sobre app vai aqui
           ppppppppp sssss kkkk frrrr eee
           wwwww aaaa qqqqq zzzz xxxx rrrr
       """
 
+    # construtor
     def __init__(self):
         pass
 
@@ -34,8 +36,8 @@ class ModuloPyArduino(object):
     def config_arduino(self):
         print("\n Eu sou configuracao do arduino\n")
         # porta_s = 'COM7'
-        porta_dht = 'COM6'
-        porta_umid = 'COM7'
+        porta_dht = "COM6"
+        porta_umid = "COM7"
         porta_soil = "COM8"
         # porta_pisca_led = 'COM3'
         speed = 9600
@@ -44,6 +46,8 @@ class ModuloPyArduino(object):
 
     # ------------------------------------------------------------------------------
     def set_conection(self, p, v):
+        # p - port
+        # v - velocity
         seri = serial.Serial(p, v)
         print"\n porta em uso antes de teste: ", seri.name
 
@@ -60,7 +64,7 @@ class ModuloPyArduino(object):
 
     # ------------------------------------------------------------------------------
     # setting conectiong with exception Input/output error
-    def set_conection2(self, p, v):
+    def set_conection_exception(self, p, v):
         try:
             ser = serial.Serial(p, v)
         except IOError:
