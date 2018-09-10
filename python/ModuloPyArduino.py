@@ -8,17 +8,19 @@ import time as t
 
 import serial
 
-import DataProcess as Mdp
-import ModulePyCloudMongo as Mpcm
+# import DataProcess as Mdp
+# import ModulePyCloudMongo as Mpcm
 
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
     tempoAtual = 300  # o tempo eh dado em segundos: 300s = 5min
+
     info = """
-          Informação sobre app vai aqui
-          ppppppppp sssss kkkk frrrr eee
-          wwwww aaaa qqqqq zzzz xxxx rrrr
+          Informação sobre app vai aqui.
+          ...
+          ...
+          ...          
       """
 
     # construtor
@@ -27,21 +29,18 @@ class ModuloPyArduino(object):
 
     # ------------------------------------------------------------------------------
     def appInfo(self):
-        print("\n Eu sou appInfo() e vc eh \n Obama WM")
-        print("\n\n ---------------------------------------------")
+        print("\n ---------------------------------------------")
         print(self.info)
         print("\n ---------------------------------------------")
 
     # ------------------------------------------------------------------------------
     def config_arduino(self):
-        print("\n Eu sou configuracao do arduino\n")
-        # porta_s = 'COM7'
-        porta_dht = "COM6"
-        porta_umid = "COM7"
-        porta_soil = "COM8"
-        # porta_pisca_led = 'COM3'
+        print("\n This is Arduino configuration...\n")
+        porta_dht = 'COM6'
         speed = 9600
-        # return porta_dht, porta_umid, porta_soil, speed
+
+        """ return porta_dht que é igual para porta_umid e porta_soil
+            speed - velocidade de transmissão"""
         return porta_dht, speed
 
     # ------------------------------------------------------------------------------
@@ -49,6 +48,7 @@ class ModuloPyArduino(object):
         # p - port
         # v - velocity
         seri = serial.Serial(p, v)
+
         print"\n porta em uso antes de teste: ", seri.name
 
         if not seri.isOpen():
@@ -68,10 +68,12 @@ class ModuloPyArduino(object):
         try:
             ser = serial.Serial(p, v)
         except IOError:
-            print"\n Erro ao abrir a conexao. Porta já em uso:  "
+            print"\n Erro ao abrir a conexao. Porta já em uso:  ", ser.name
             print "\n\n The application will be quited in 5s!!!\n\n\n"
             t.sleep(5)
             exit(0)
+        else:
+            return ser
 
     # ------------------------------------------------------------------------------
     def menu(self):

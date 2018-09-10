@@ -19,9 +19,9 @@ import time as t
 # ---------------------------------------------------------------
 #   Main application witch controll the application
 # ---------------------------------------------------------------
-def main_aplication_1p(loop):
+def main_aplication_1p_test(loop):
 
-    print("\n\n Eu sou principal port 1")
+    print("\n\n\n\n Principal 1: TEST")
 
     # -----------------------------------------------------------
     #       Instanciando objeto da classe ModuloPyArduino: p_a
@@ -52,19 +52,27 @@ def main_aplication_1p(loop):
     # ------------------------------------------------------------
     # p_a.serialLoopApp(con_dht, con_umid, con_soil, loop)
 
+    print("\n\n\n")
     i = 0
     while i < loop:
         data_arduino = p_a.get_data_arduino2py(con_dht)
-        print "\n\n Arduino leu:  ", data_arduino
+        # data_arduino = con_dht.readline()
+        print "\n Arduino leu -->", data_arduino
         i += 1
         t.sleep(2)
 
-    con_dht.close()
-    print("\n\n Apliacacao ENCERRADA")
+    close_one_conection(con_dht)
+    print("\n\n Apliacacao ENCERRADA\n\n")
     exit(0)
 
     # close_all_conection()
     # print("\n\n Apliacacao ENCERRADA")
+
+# ----------------------------------------------------------------
+#  This is the method which close one of Arduino board conection
+# ----------------------------------------------------------------
+def close_one_conection(con):
+    con.close()
 
 
 # ----------------------------------------------------------------
@@ -89,7 +97,7 @@ def run_application(rodar):
 
     while rodar == 1:
         print("\n\n Apliacacao em execucao...\n\n ")
-        main_aplication_1p(rodar)
+        main_aplication_1p_test(rodar)
         close_all_conection()
 
     print("\n\n Apliacacao ENCERRADA")  
@@ -102,4 +110,4 @@ def run_application(rodar):
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
-    main_aplication_1p(3)
+    main_aplication_1p_test(30)
