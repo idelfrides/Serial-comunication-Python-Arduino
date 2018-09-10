@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+
+
 import os
 import time as t
 import random as r
@@ -12,9 +14,7 @@ import ModulePyCloudMongo as Mpcm
 class DataProcess(object):
     mpao = Mpa.ModuloPyArduino()
     temperatura = -1
-    tempoEspera = 3   # tempoEspera eh dado em segundos
     tempoUser = 60  # o tempo eh dado em segundos: 60s = 1min
-    tempoPadrao = 60  # o tempo eh dado em segundos: 300s = 5min
 
 
     def __init__(self):
@@ -118,7 +118,7 @@ class DataProcess(object):
         else:
             print("\n\n RUN is zero \n\n")
 
-    # -------------------------------------------------------------------------------
+
     def validate_sensor_data(self, param, valor):
         refval_dht = 30  # referência, média de temperatura relativa
         refval_umi = 30  # referência, média de umidade relativa

@@ -14,7 +14,7 @@ __author__ = 'IDELFRIDES JORGE'
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
-import DataProcess as Dp
+# import DataProcess as Dp
 import time as t
 
 
@@ -29,7 +29,7 @@ def main_aplication(run):
     #       Instanciando objeto da classe ModuloPyArduino: p_a
     # -----------------------------------------------------------
     p_a = Mpa.ModuloPyArduino()
-    dpo = Dp.DataProcess()
+    #dpo = Dp.DataProcess()
 
     # -----------------------------------------------------------
     #       Exibe informação sobre App
@@ -58,29 +58,52 @@ def main_aplication(run):
     # Calling the loop method to read data form arduino,
     # setting up it and send it to the cloud mongoDB
     # ------------------------------------------------------------
-    # dpo.serialLoopApp(con_dht, con_umid, con_soil, run)
+    # if run == 1:
+    #     print("\n\n\n Apliacacao em execucao...\n\n ")
+    #     while run == 1:
+    #         dpo.serialLoopApp(con_dht, con_umid, con_soil, run)
+    #
+    #         t.sleep(p_a.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
+    #     close_all_conection()
+    # else:
+    #     print("\n\n ==> Apliacacao NAO EXECUTADA")
+    #     print("\n\t ---------------------")
+    #     exit(0)
+    #
+    # ----------------------------------------------------
 
-    print("\n\t ------")
     if run == 1:
-    #   data_arduino = p_a.get_data_arduino2py(con_dht)
-        data_arduino = con_dht.readline()
-        print "\n Arduino leu TEMP -->", data_arduino
-        t.sleep(dpo.tempoEspera)
+        print("\n\n\n Apliacacao em execucao...\n\n ")
+        while run < 50:
+            print("\n\t ------")
+            #   data_arduino = p_a.get_data_arduino2py(con_dht)
+            data_arduino = con_dht.readline()
+            print "\n Arduino leu TEMP -->", data_arduino
+            t.sleep(p_a.tempoEspera)
 
-        data_arduino = con_dht.readline()
-        print "\n Arduino leu UMID -->", data_arduino
-        t.sleep(dpo.tempoEspera)
+            data_arduino = con_dht.readline()
+            print "\n Arduino leu UMID -->", data_arduino
+            t.sleep(p_a.tempoEspera)
 
-        data_arduino = con_dht.readline()
-        print "\n Arduino leu SOIL -->", data_arduino
-        t.sleep(dpo.tempoEspera)
+            data_arduino = con_dht.readline()
+            print "\n Arduino leu SOIL -->", data_arduino
+            t.sleep(p_a.tempoEspera)
+            run += 1
+            t.sleep(p_a.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
 
-    # close_one_conection(con_dht)
-    # # close_all_conection()
-    # print("\n\n ==> Apliacacao ENCERRADA")
-    # # print(t.time())
-    # print("\n\t ---------------------")
-    # exit(0)
+        close_one_conection(con_dht)
+        # close_all_conection()
+        print("\n\n ==> Apliacacao ENCERRADA")
+        print("\n\t --------------------------")
+        print("\n\t @UTHOR: IDELFRIDES JORGE \n\t idelfridesjorgeCopyright2018 | All Rights Resered. \n\n\t---------------------------")
+        exit(0)
+    else:
+        print("\n\n ==> Apliacacao NAO EXECUTADA")
+        print("\n\t --------------------------")
+        print("\n\t @UTHOR: IDELFRIDES JORGE \n\t idelfridesjorgeCopyright2018 | All Rights Resered. \n\n\t---------------------------")
+        exit(0)
+
+
 
 
 # ----------------------------------------------------------------
@@ -94,12 +117,10 @@ def close_one_conection(con):
 #  This is the method which close all Arduino board conections
 # ----------------------------------------------------------------
 def close_all_conection():
-    global con_s
     global con_dht
     global con_umid
     global con_soil
 
-    con_s.close()
     con_dht.close()
     con_soil.close()
     con_umid.close()
@@ -109,19 +130,26 @@ def close_all_conection():
 #  This is the method starts running the application
 # -----------------------------------------------------------
 def run_application(rodar):
-    dpo = Dp.DataProcess()
+    #dpo = Dp.DataProcess()
+    p_a = Mpa.ModuloPyArduino()
+    print"\n\n eu sou run application...\n\n"
 
-    while rodar == 1:
+    if rodar == 1:
+        controle = 1
         print("\n\n\n Apliacacao em execucao...\n\n ")
-        main_aplication(rodar)
-        t.sleep(dpo.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
+        while rodar == 1:
+            main_aplication(rodar, controle)
+            t.sleep(p_a.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
+            controle += 1
 
-    close_one_conection(con_dht)
-    # close_all_conection()
-    print("\n\n ==> Apliacacao ENCERRADA")
-    # print(t.time())
-    print("\n\t ---------------------")
-    exit(0)
+        close_one_conection(con_dht)
+        # close_all_conection()
+    else:
+        print("\n\n ==> Apliacacao NAO EXECUTADA")
+        print("\n\t ---------------------")
+        exit(0)
+
+
 
 
 # ---------------------------------------------------------
@@ -131,4 +159,4 @@ def run_application(rodar):
 # ---------------------------------------------------------
 
 if __name__ == '__main__':
-    run_application(1)
+    main_aplication(1)

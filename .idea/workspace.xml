@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTeste/SensoresTeste.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTeste/SensoresTeste.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/DataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/DataProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/app_principal_1_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/app_principal_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/app_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,13 +36,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/app_principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+            <state relative-caret-position="317">
+              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
               <folding>
                 <element signature="e#471#500#0" expanded="true" />
+                <element signature="e#4228#4345#0" />
+                <element signature="e#3729#4361#0" />
               </folding>
             </state>
           </provider>
@@ -55,8 +53,8 @@
       <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="630">
+              <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
               <folding>
                 <element signature="e#44#71#0" expanded="true" />
                 <element signature="e#648#798#0" />
@@ -69,14 +67,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="196">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
                 <element signature="e#1032#1317#0" />
+                <element signature="e#1001#5372#0" />
                 <element signature="e#5639#7096#0" />
                 <element signature="e#4332#4501#0" />
                 <element signature="e#7860#8609#0" />
@@ -138,9 +137,9 @@
         <option value="$PROJECT_DIR$/python/app_principal_2.py" />
         <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
         <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
+        <option value="$PROJECT_DIR$/python/DataProcess.py" />
         <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
         <option value="$PROJECT_DIR$/python/app_principal.py" />
-        <option value="$PROJECT_DIR$/python/DataProcess.py" />
       </list>
     </option>
   </component>
@@ -231,63 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.app_principal_1_port">
-    <configuration name="ModuloPyArduino" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py-arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="TesteCloudMongo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py-arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/TesteCloudMongo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="app_principal-one-port" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
-      <module name="py-arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/app_principal-one-port.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="app_principal" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
       <module name="py-arduino" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,67 +243,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\ESTAGIO-SUPER\py-arduino\Serial-comunication-Python-Arduino\python\app_principal-one-port.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/app_principal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="app_principal_1_port" type="PythonConfigurationType" factoryName="Python">
-      <module name="py-arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\ESTAGIO-SUPER\py-arduino\Serial-comunication-Python-Arduino\python\app_principal.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="app_principal_2" type="PythonConfigurationType" factoryName="Python" singleton="true" temporary="true">
-      <module name="py-arduino" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYDEVD_LOAD_VALUES_ASYNC" value="True" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/app_principal_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.app_principal_1_port" />
-      <item itemvalue="Python.app_principal" />
-      <item itemvalue="Python.app_principal_2" />
-      <item itemvalue="Python.TesteCloudMongo" />
-      <item itemvalue="Python.app_principal-one-port" />
-      <item itemvalue="Python.ModuloPyArduino" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ModuloPyArduino" />
-        <item itemvalue="Python.app_principal-one-port" />
         <item itemvalue="Python.app_principal" />
-        <item itemvalue="Python.TesteCloudMongo" />
-        <item itemvalue="Python.app_principal_2" />
       </list>
     </recent_temporary>
   </component>
@@ -398,12 +289,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16853933" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16853933" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.32695138" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33707866" side_tool="true" weight="0.32842416" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49570355" weight="0.2916053" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.66292137" weight="0.43740794" />
-      <window_info anchor="bottom" x="900" y="50" width="628" height="719" id="Run" order="2" type="FLOATING" weight="0.21354933" />
+      <window_info anchor="bottom" x="895" y="49" width="628" height="719" id="Run" order="2" type="FLOATING" weight="0.5139912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24758324" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32695138" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -518,6 +409,8 @@
           <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding>
             <element signature="e#471#500#0" expanded="true" />
+            <element signature="e#4228#4345#0" />
+            <element signature="e#3729#4361#0" />
           </folding>
         </state>
       </provider>
@@ -539,6 +432,7 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
             <element signature="e#5639#7096#0" />
             <element signature="e#4332#4501#0" />
             <element signature="e#7860#8609#0" />
@@ -598,6 +492,7 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
             <element signature="e#5639#7096#0" />
             <element signature="e#4332#4501#0" />
             <element signature="e#7860#8609#0" />
@@ -653,6 +548,7 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
             <element signature="e#5639#7096#0" />
             <element signature="e#4332#4501#0" />
             <element signature="e#7860#8609#0" />
@@ -701,6 +597,7 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
             <element signature="e#5639#7096#0" />
             <element signature="e#4332#4501#0" />
             <element signature="e#7860#8609#0" />
@@ -745,6 +642,7 @@
           <folding>
             <element signature="e#43#52#0" expanded="true" />
             <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
             <element signature="e#5639#7096#0" />
             <element signature="e#4332#4501#0" />
             <element signature="e#7860#8609#0" />
@@ -863,10 +761,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#1001#5372#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="630">
+          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding>
             <element signature="e#44#71#0" expanded="true" />
             <element signature="e#648#798#0" />
@@ -880,33 +802,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+        <state relative-caret-position="317">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
           <folding>
             <element signature="e#471#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#1032#1317#0" />
-            <element signature="e#5639#7096#0" />
-            <element signature="e#4332#4501#0" />
-            <element signature="e#7860#8609#0" />
-            <element signature="e#4570#4725#0" />
-            <element signature="e#7996#8290#0" />
-            <element signature="e#4794#5859#0" />
-            <element signature="e#5919#6810#0" />
-            <element signature="e#6873#7479#0" />
-            <element signature="e#11107#11291#0" />
-            <element signature="e#12953#14186#0" />
-            <element signature="e#13465#13513#0" />
-            <element signature="e#13628#14244#0" />
+            <element signature="e#4228#4345#0" />
+            <element signature="e#3729#4361#0" />
           </folding>
         </state>
       </provider>
