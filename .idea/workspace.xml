@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTesteHumano/SensoresTesteHumano.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTeste/SensoresTeste.ino" beforeDir="false" afterPath="$PROJECT_DIR$/Arduino/sketch_nov06a.ino/SensoresTeste/SensoresTeste.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/DataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/DataProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/app_principal_1_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal_1_port.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/app_principal_1_port.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/app_principal_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal_2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,23 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
+      <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/app_principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-              <folding>
-                <element signature="e#44#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_principal_1_port.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/python/app_principal_1_port.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            <state relative-caret-position="181">
+              <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
               <folding>
                 <element signature="e#471#500#0" expanded="true" />
               </folding>
@@ -61,16 +52,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#44#71#0" expanded="true" />
+                <element signature="e#648#798#0" />
+                <element signature="e#1001#1251#0" />
+                <element signature="e#1381#1840#0" />
+                <element signature="e#2042#2321#0" />
+                <element signature="e#2400#2729#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-486">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="56">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
-                <element signature="e#2001#2017#0" />
-                <element signature="e#2073#2121#0" />
-                <element signature="e#2236#2852#0" />
+                <element signature="e#1032#1317#0" />
+                <element signature="e#5639#7096#0" />
+                <element signature="e#4332#4501#0" />
+                <element signature="e#7860#8609#0" />
+                <element signature="e#4570#4725#0" />
+                <element signature="e#7996#8290#0" />
+                <element signature="e#4794#5859#0" />
+                <element signature="e#5919#6810#0" />
+                <element signature="e#6873#7479#0" />
+                <element signature="e#11107#11291#0" />
+                <element signature="e#12953#14186#0" />
+                <element signature="e#13465#13513#0" />
+                <element signature="e#13628#14244#0" />
               </folding>
             </state>
           </provider>
@@ -79,8 +97,8 @@
       <file leaf-file-name="ModulePyCloudMongo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="1550">
+              <caret line="71" column="15" lean-forward="true" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="38" />
               <folding>
                 <element signature="e#455#476#0" expanded="true" />
               </folding>
@@ -91,7 +109,7 @@
       <file leaf-file-name="TesteCloudMongo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/TesteCloudMongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="553">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
@@ -116,13 +134,13 @@
         <option value="$PROJECT_DIR$/python/my_test_Led.py" />
         <option value="$PROJECT_DIR$/python/exper_arquivos.py" />
         <option value="$PROJECT_DIR$/python/TesteCloudMongo.py" />
+        <option value="$PROJECT_DIR$/python/app_principal-one-port.py" />
+        <option value="$PROJECT_DIR$/python/app_principal_2.py" />
+        <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
+        <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
+        <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
         <option value="$PROJECT_DIR$/python/app_principal.py" />
         <option value="$PROJECT_DIR$/python/DataProcess.py" />
-        <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
-        <option value="$PROJECT_DIR$/python/app_principal_2.py" />
-        <option value="$PROJECT_DIR$/python/app_principal-one-port.py" />
-        <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
-        <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
       </list>
     </option>
   </component>
@@ -182,7 +200,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="settings.editor.splitter.proportion" value="0.305499" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -214,6 +232,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.app_principal_1_port">
+    <configuration name="ModuloPyArduino" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py-arduino" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="TesteCloudMongo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py-arduino" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -284,7 +320,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/app_principal_1_port.py" />
+      <option name="SCRIPT_NAME" value="D:\ESTAGIO-SUPER\py-arduino\Serial-comunication-Python-Arduino\python\app_principal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,9 +352,11 @@
       <item itemvalue="Python.app_principal_2" />
       <item itemvalue="Python.TesteCloudMongo" />
       <item itemvalue="Python.app_principal-one-port" />
+      <item itemvalue="Python.ModuloPyArduino" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ModuloPyArduino" />
         <item itemvalue="Python.app_principal-one-port" />
         <item itemvalue="Python.app_principal" />
         <item itemvalue="Python.TesteCloudMongo" />
@@ -358,15 +396,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16853933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16853933" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.32695138" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33707866" side_tool="true" weight="0.32842416" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49570355" weight="0.2916053" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.66292137" weight="0.43740794" />
-      <window_info active="true" anchor="bottom" x="907" y="49" width="590" height="672" id="Run" order="2" type="FLOATING" visible="true" weight="0.44477174" />
+      <window_info anchor="bottom" x="900" y="50" width="628" height="719" id="Run" order="2" type="FLOATING" weight="0.21354933" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24758324" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32839224" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32695138" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41558442" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -473,7 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal_1_port.py">
+    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
@@ -499,9 +538,19 @@
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>
@@ -548,9 +597,19 @@
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>
@@ -593,9 +652,19 @@
           <caret line="99" column="44" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="44" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>
@@ -631,9 +700,19 @@
           <caret selection-end-line="2" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>
@@ -665,21 +744,24 @@
         <state>
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py" />
-    <entry file="file://$PROJECT_DIR$/python/app_principal_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="81" column="15" selection-start-line="81" selection-start-column="15" selection-end-line="81" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3612">
@@ -757,52 +839,74 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal-one-port.py" />
+    <entry file="file://$PROJECT_DIR$/python/app_principal_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/TesteCloudMongo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="1550">
+          <caret line="71" column="15" lean-forward="true" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="38" />
           <folding>
             <element signature="e#455#476#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/TesteCloudMongo.py">
+    <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="720">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#44#71#0" expanded="true" />
+            <element signature="e#648#798#0" />
+            <element signature="e#1001#1251#0" />
+            <element signature="e#1381#1840#0" />
+            <element signature="e#2042#2321#0" />
+            <element signature="e#2400#2729#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/app_principal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+          <folding>
+            <element signature="e#471#500#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="56">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#43#52#0" expanded="true" />
-            <element signature="e#2001#2017#0" />
-            <element signature="e#2073#2121#0" />
-            <element signature="e#2236#2852#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-          <folding>
-            <element signature="e#44#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/app_principal_1_port.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-          <folding>
-            <element signature="e#471#500#0" expanded="true" />
+            <element signature="e#1032#1317#0" />
+            <element signature="e#5639#7096#0" />
+            <element signature="e#4332#4501#0" />
+            <element signature="e#7860#8609#0" />
+            <element signature="e#4570#4725#0" />
+            <element signature="e#7996#8290#0" />
+            <element signature="e#4794#5859#0" />
+            <element signature="e#5919#6810#0" />
+            <element signature="e#6873#7479#0" />
+            <element signature="e#11107#11291#0" />
+            <element signature="e#12953#14186#0" />
+            <element signature="e#13465#13513#0" />
+            <element signature="e#13628#14244#0" />
           </folding>
         </state>
       </provider>

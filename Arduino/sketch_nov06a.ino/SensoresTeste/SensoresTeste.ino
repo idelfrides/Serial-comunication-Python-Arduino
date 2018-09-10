@@ -35,7 +35,7 @@ void setup() {
    1ms = 0.001s = 1.10^-3 
    Espera por 5 s entre cada medida/leitura */
 void loop() {
-  delay(5000); 
+  delay(3000); 
   
   /* leitura de dados */
   data_dht = dht.readTemperature();       // celcius
@@ -53,10 +53,10 @@ void loop() {
   }else{
     /* impressão via monitor serial */
     Serial.println(data_dht); 
-    delay(2000);    
-    /*Serial.println(data_umid);
-    delay(2000);
-    Serial.println(data_soil);  */  
+    delay(3000);    
+    Serial.println(data_umid);
+    delay(3000);
+    Serial.println(data_soil); 
   }
   
 }

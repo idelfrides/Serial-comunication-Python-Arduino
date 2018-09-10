@@ -6,13 +6,14 @@
 __author__ = 'IDELFRIDES JORGE'
 # Copyright (c) 2017 Engineer IDELFRIDES JORGE
 
-# Written with python 2.7.14 | mongoDB-3.4.10 | pymongo-3.6
+# Written with python 2.7.5 | pyserial 2.6 | mongoDB-3.4.10 | pymongo-3.6
 # A python script connecting to a MongoDB given a MongoDB Connection URI.
 
 # ---------------------------------------------------------------
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
 import ModuloPyArduino as Mpa
+
 
 # ---------------------------------------------------------------
 #   Main application witch controll the application
@@ -35,14 +36,15 @@ def main_aplication(loop):
     #       Configurção do arduino: portas e velocidade
     # -----------------------------------------------------------
 
-    pdht, pumid, psoil, v = p_a.config_arduino()
-
+    pdht,  v = p_a.config_arduino()
+    pumid = pdht
+    psoil = pdht
     # -----------------------------------------------------------
     #           Conexão com arduino: 1 or 2
     # -----------------------------------------------------------
-    con_dht = p_a.set_conection2(pdht, v)
-    con_umid = p_a.set_conection2(pumid, v)
-    con_soil = p_a.set_conection2(psoil, v)
+    con_dht = p_a.set_conection_exception(pdht, v)
+    con_umid = p_a.set_conection_exception(pumid, v)
+    con_soil = p_a.set_conection_exception(psoil, v)
 
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,

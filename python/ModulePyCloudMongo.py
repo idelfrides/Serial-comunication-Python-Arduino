@@ -13,7 +13,6 @@ __author__ = 'IDELFRIDES JORGE'
 #      Importing classes to help the main method of this class
 # ---------------------------------------------------------------
 import pymongo as pym
-import ModuloPyArduino as Mpa
 import DataProcess as Dp
 
 
@@ -48,7 +47,6 @@ class ModulePyCloudMongo:
                 print("\n\n Erro de insersao de dados na colecao dadosNumSensores2")
                 self.closeCMConection()
                 exit(0)
-
         elif idCollec == 2:      # dadosVerificSensores2
             dadosVerificSensores2 = db['dadosVerificSensores2']
             try:
@@ -57,7 +55,6 @@ class ModulePyCloudMongo:
                 print("\n\n Erro de insersao de dados na colecao dadosVerificSensores2")
                 self.closeCMConection()
                 exit(0)
-
         elif idCollec == 3: # controle2
             controle2 = db['controle2']
             try:
@@ -66,17 +63,14 @@ class ModulePyCloudMongo:
                 print("\n\n Erro de insersao de dados na colecao controle2")
                 self.closeCMConection()
                 exit(0)
-
         else:   # recuperar o tempo de resposta: idCollec = 4
                 # docum = db.get_collection('controle').find({"tempo":{$gte:5}})
             try:
                 docum = db.get_collection('controle').find().pretty()
                 d = dict(docum)
-                mpao = Mpa.ModuloPyArduino()
-                tempoAt = d.get('tempo')  # recupera o valor do campo tempo
-
+                tempoUser = d.get('tempo')  # recupera o valor do campo tempo
                 dpo = Dp.DataProcess()
-                mpao.tempoAtual = dpo.converterTempo(tempoAt)
+                dpo.tempoAtual = dpo.converterTempo(tempoUser)
             except IOError:
                 print("\n\n Erro na selecao de documentos da colecao controle")
                 self.closeCMConection()
@@ -84,7 +78,7 @@ class ModulePyCloudMongo:
 
 
     # --------------------------------------------------------------------------------
-    # The method wich close conection with remote cloud mongodb server
+    # The method  which close conection with remote cloud mongodb server
     def closeCMConection(self):
         global client
         client.close()
