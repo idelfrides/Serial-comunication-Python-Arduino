@@ -57,7 +57,7 @@ def main_aplication(run):
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,
     # setting up it and send it to the cloud mongoDB
-    # ------------------------------------------------------------
+    # -----------------------------------------------------------
     # if run == 1:
     #     print("\n\n\n Apliacacao em execucao...\n\n ")
     #     while run == 1:
@@ -70,11 +70,11 @@ def main_aplication(run):
     #     print("\n\t ---------------------")
     #     exit(0)
     #
-    # ----------------------------------------------------
+    # ----------------------------------------------------------
 
     if run == 1:
         print("\n\n\n Apliacacao em execucao...\n\n ")
-        while run < 50:
+        while run == 1:
             print("\n\t ------")
             #   data_arduino = p_a.get_data_arduino2py(con_dht)
             data_arduino = con_dht.readline()
@@ -88,7 +88,7 @@ def main_aplication(run):
             data_arduino = con_dht.readline()
             print "\n Arduino leu SOIL -->", data_arduino
             t.sleep(p_a.tempoEspera)
-            run += 1
+            # run += 1
             t.sleep(p_a.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
 
         close_one_conection(con_dht)
@@ -126,9 +126,9 @@ def close_all_conection():
     con_umid.close()
 
 
-# -----------------------------------------------------------
+# --------------------------------------------------------------
 #  This is the method starts running the application
-# -----------------------------------------------------------
+# --------------------------------------------------------------
 def run_application(rodar):
     #dpo = Dp.DataProcess()
     p_a = Mpa.ModuloPyArduino()

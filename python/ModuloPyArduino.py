@@ -10,7 +10,7 @@ import serial
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
-    tempoPadrao = 5  # o tempo eh dado em segundos: 300s = 5min
+    tempoPadrao = 300  # o tempo eh dado em segundos: 300s = 5min
     tempoEspera = 3  # tempoEspera eh dado em segundos
 
     info = """
@@ -35,7 +35,7 @@ class ModuloPyArduino(object):
     # ------------------------------------------------------------------------------
     def config_arduino(self):
         print("\n This is Arduino configuration...\n")
-        porta_dht = 'COM6'
+        porta_dht = 'COM5'
         speed = 9600
 
         """ return porta_dht que é igual para porta_umid e porta_soil
