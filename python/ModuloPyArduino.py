@@ -10,7 +10,7 @@ import serial
 
 # ----------------------------------------------------------------------------------
 class ModuloPyArduino(object):
-    tempoPadrao = 300  # o tempo eh dado em segundos: 300s = 5min
+    tempoPadrao = 3  # o tempo eh dado em segundos: 300s = 5min
     tempoEspera = 3  # tempoEspera eh dado em segundos
 
     info = """

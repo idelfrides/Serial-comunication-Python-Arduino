@@ -16,26 +16,25 @@ class DataProcess(object):
     temperatura = -1
     tempoUser = 60  # o tempo eh dado em segundos: 60s = 1min
 
-
     def __init__(self):
         pass
 
-    mpao.appInfo()  # informacao da app
-
+    # mpao.appInfo()  # informacao da app
 
     # ---------------------------------------------------------------------------
 
     def validaTipoDado(self, d1, d2, d3):
+        # d1 - valor temp | d2 - valor umid | d3 - valor umid solo
         if type(d1) != str and type(d2) != str and type(d3) != str:
             return 1  # leitura realizada com sucesso, dados numéricos
         else:
             return 0  # leitura realizada com falha
 
-        # -----------------------------------------------------------------------------
+    # -----------------------------------------------------------------------------
 
     def serialLoopApp(self, condht, conumid, consoil, run):
-        beforeState = 0
-        correntState = 0
+        beforeState = 0    # estado anterior
+        correntState = 0   # estado atual
 
         # creating object of DataProcess and ModulePyCloudMongo classes: dpo, mpcmo
         # dpo = Mdp.DataProcess()
@@ -48,10 +47,10 @@ class DataProcess(object):
             # ------------------------------------------------------------
             datadht = self.mpao.get_data_arduino2py(condht)
             print "\n Arduino leu DHT11: ", datadht
-            t.sleep(self.tempoEspera)
+            t.sleep(self.mpao.tempoEspera)
             dataumid = self.mpao.get_data_arduino2py(conumid)
             print "\n Arduino leu UMIDADE: ", dataumid
-            t.sleep(self.tempoEspera)
+            t.sleep(self.mpao.tempoEspera)
             datasoil = self.mpao.get_data_arduino2py(consoil)
             print "\n Arduino leu SOIL: ", datasoil
 
@@ -120,9 +119,9 @@ class DataProcess(object):
 
 
     def validate_sensor_data(self, param, valor):
-        refval_dht = 30  # referência, média de temperatura relativa
-        refval_umi = 30  # referência, média de umidade relativa
-        # refval_soil = 20    # referência, média de umidade solo
+        refval_dht = 30     # referência, média de temperatura relativa
+        refval_umi = 30     # referência, média de umidade relativa
+        # refval_soil = 20  # referência, média de umidade solo
 
         if param == "temperatura":
             if valor > refval_dht:
@@ -283,8 +282,6 @@ class DataProcess(object):
 
 
     # -----------------------------------------------------------------------------
-
-
 
     @staticmethod
     def send_data_py2cloud():
