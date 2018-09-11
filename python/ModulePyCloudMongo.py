@@ -6,7 +6,7 @@
 
 __author__ = 'IDELFRIDES JORGE'
 
-# Written with python 2.7.14 | mongoDB-3.4.10 | pymongo-3.6
+# Written with python 2.7.5 | mongoDB-3.4.10 | pymongo-3.6
 # A python script connecting to a MongoDB given a MongoDB Connection URI.
 
 # ---------------------------------------------------------------

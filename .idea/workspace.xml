@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/python/DataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/DataProcess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/ModuloPyArduino.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModuloPyArduino.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/app_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,10 +39,11 @@
       <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/app_principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+            <state relative-caret-position="-2435">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
-                <element signature="e#487#516#0" expanded="true" />
+                <element signature="e#487#511#0" expanded="true" />
+                <element signature="e#2712#2816#0" />
               </folding>
             </state>
           </provider>
@@ -63,8 +64,8 @@
       <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="-1188">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -72,8 +73,8 @@
       <file leaf-file-name="ModulePyCloudMongo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="59">
+              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -100,10 +101,10 @@
         <option value="$PROJECT_DIR$/python/app_principal-one-port.py" />
         <option value="$PROJECT_DIR$/python/app_principal_2.py" />
         <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
-        <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
         <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
-        <option value="$PROJECT_DIR$/python/DataProcess.py" />
         <option value="$PROJECT_DIR$/python/app_principal.py" />
+        <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
+        <option value="$PROJECT_DIR$/python/DataProcess.py" />
       </list>
     </option>
   </component>
@@ -123,40 +124,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Serial-comunication-Python-Arduino" type="cbb8eebc:String" user="Serial-comunication-Python-Arduino" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Serial-comunication-Python-Arduino" type="cbb8eebc:String" user="Serial-comunication-Python-Arduino" />
-              <item name="python" type="cbb8eebc:String" user="python" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;null&#9;null" />
@@ -258,7 +226,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33707866" side_tool="true" weight="0.32842416" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49570355" weight="0.2916053" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.66292137" weight="0.43740794" />
-      <window_info anchor="bottom" x="900" y="135" width="607" height="492" id="Run" order="2" type="FLOATING" weight="0.35493374" />
+      <window_info active="true" anchor="bottom" x="903" y="50" width="601" height="707" id="Run" order="2" visible="true" weight="0.52724594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24758324" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32695138" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -626,24 +594,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="59">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="-1188">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="80" column="2" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
+        <state relative-caret-position="-2435">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
-            <element signature="e#487#516#0" expanded="true" />
+            <element signature="e#487#511#0" expanded="true" />
+            <element signature="e#2712#2816#0" />
           </folding>
         </state>
       </provider>

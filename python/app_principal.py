@@ -13,10 +13,9 @@ __author__ = 'IDELFRIDES JORGE'
 # ---------------------------------------------------------------
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
-import ModuloPyArduino as Mpa
 import DataProcess as Dp
+import ModuloPyArduino as Mpa
 import time as t
-
 
 # ---------------------------------------------------------------
 #   Main application witch controll the application
@@ -54,6 +53,8 @@ def main_aplication(run):
     con_umid = con_dht
     con_soil = con_dht
 
+    # runAppTest(con_dht, run)  # call the runAppTest method to test the application.
+
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,
     # setting up it and send it to the cloud mongoDB
@@ -75,12 +76,11 @@ def main_aplication(run):
 
     # ----------------------------------------------------------
 
-    runAppTest(con_dht, run)  # call the runAppTest method to test the application.
 
 # runAppTest - the method whitch test the application
 # without calling outhers modules
 def runAppTest(con_dht, run):
-    #dpo = Dp.DataProcess()
+    print("\n\n You are welcome !\n EU SOU RUN APP TEST\n\n")
     p_a = Mpa.ModuloPyArduino()
 
     if run == 1:
@@ -140,6 +140,7 @@ def close_all_conection():
 # --------------------------------------------------------------
 def run_application(rodar):
     #dpo = Dp.DataProcess()
+
     p_a = Mpa.ModuloPyArduino()
     print"\n\n eu sou run application...\n\n"
 
