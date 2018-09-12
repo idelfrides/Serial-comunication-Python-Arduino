@@ -2,9 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbf0e0d5-f643-4080-b605-3ff8ad55fcba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/python/DataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/DataProcess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/ModulePyCloudMongo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/app_principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/app_principal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bson/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bson/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bson/_cbson.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bson/_cbson.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bson/codec_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bson/codec_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bson/objectid.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bson/objectid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bson/py3compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bson/py3compat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gridfs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gridfs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gridfs/grid_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gridfs/grid_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo-3.6.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/_cmessage.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/_cmessage.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/bulk.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/bulk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/change_stream.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/change_stream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/client_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/client_options.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/client_session.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/client_session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/command_cursor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/command_cursor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/cursor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/cursor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/errors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/ismaster.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/ismaster.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/mongo_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/mongo_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/pool.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/pool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/ssl_support.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/ssl_support.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/topology.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/topology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/uri_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/uri_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/write_concern.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymongo/write_concern.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,14 +74,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app_principal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/app_principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2435">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="2632">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
               <folding>
-                <element signature="e#487#511#0" expanded="true" />
-                <element signature="e#2712#2816#0" />
+                <element signature="e#513#542#0" expanded="true" />
+                <element signature="e#3093#4452#0" />
+                <element signature="e#4931#5048#0" />
+                <element signature="e#5266#5850#0" />
               </folding>
             </state>
           </provider>
@@ -52,8 +92,8 @@
       <file leaf-file-name="ModuloPyArduino.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2219">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#44#71#0" expanded="true" />
               </folding>
@@ -64,17 +104,20 @@
       <file leaf-file-name="DataProcess.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1188">
+            <state relative-caret-position="-566">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModulePyCloudMongo.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModulePyCloudMongo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="90">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#454#475#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,9 +145,9 @@
         <option value="$PROJECT_DIR$/python/app_principal_2.py" />
         <option value="$PROJECT_DIR$/python/app_principal_1_port.py" />
         <option value="$PROJECT_DIR$/python/ModuloPyArduino.py" />
+        <option value="$PROJECT_DIR$/python/DataProcess.py" />
         <option value="$PROJECT_DIR$/python/app_principal.py" />
         <option value="$PROJECT_DIR$/python/ModulePyCloudMongo.py" />
-        <option value="$PROJECT_DIR$/python/DataProcess.py" />
       </list>
     </option>
   </component>
@@ -124,14 +167,47 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Serial-comunication-Python-Arduino" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Serial-comunication-Python-Arduino" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Default">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Serial-comunication-Python-Arduino" type="cbb8eebc:String" user="Serial-comunication-Python-Arduino" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Serial-comunication-Python-Arduino" type="cbb8eebc:String" user="Serial-comunication-Python-Arduino" />
+              <item name="python" type="cbb8eebc:String" user="python" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Meus Documentos" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.305499" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -221,16 +297,16 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16853933" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16853933" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.32695138" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33707866" side_tool="true" weight="0.32842416" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49570355" weight="0.2916053" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.66292137" weight="0.43740794" />
-      <window_info active="true" anchor="bottom" x="903" y="50" width="601" height="707" id="Run" order="2" visible="true" weight="0.52724594" />
+      <window_info anchor="bottom" x="1037" y="50" width="467" height="526" id="Run" order="2" type="FLOATING" visible="true" weight="0.52724594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24758324" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32695138" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41558442" />
+      <window_info anchor="bottom" x="1019" y="70" width="486" height="469" id="Debug" order="3" type="FLOATING" weight="0.41531664" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -248,25 +324,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16004297" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Data View" order="6" weight="0.32975295" />
       <window_info id="Structure" order="1" weight="0.24758324" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49785176" weight="0.32839224" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49570355" weight="0.2919042" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4526796" />
-      <window_info anchor="right" id="Data View" order="6" weight="0.32975295" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.43785632" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16004297" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" x="0" y="0" width="434" height="848" id="Documentation" order="3" weight="0.32975295" />
       <window_info anchor="right" id="Database" order="4" weight="0.32975295" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32839224" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021482" side_tool="true" weight="0.3295325" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49570355" weight="0.2919042" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="5" weight="0.32975295" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4127708" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.43785632" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,24 +397,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="71" column="15" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -582,37 +644,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/py-arduino-wm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/serial/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-566">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python/ModuloPyArduino.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2219">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#44#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/DataProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1188">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python/app_principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2435">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="2632">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
           <folding>
-            <element signature="e#487#511#0" expanded="true" />
-            <element signature="e#2712#2816#0" />
+            <element signature="e#513#542#0" expanded="true" />
+            <element signature="e#3093#4452#0" />
+            <element signature="e#4931#5048#0" />
+            <element signature="e#5266#5850#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/ModulePyCloudMongo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#454#475#0" expanded="true" />
           </folding>
         </state>
       </provider>

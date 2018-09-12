@@ -13,6 +13,7 @@ __author__ = 'IDELFRIDES JORGE'
 #      Importing classes to help the main method of this class
 # ---------------------------------------------------------------
 import pymongo as pym
+# import pymongo
 import DataProcess as Dp
 
 

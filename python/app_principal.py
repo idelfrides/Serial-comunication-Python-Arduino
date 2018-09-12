@@ -13,7 +13,7 @@ __author__ = 'IDELFRIDES JORGE'
 # ---------------------------------------------------------------
 #      Importing classes to help the main method of this app
 # ---------------------------------------------------------------
-import DataProcess as Dp
+# import DataProcess as Dp
 import ModuloPyArduino as Mpa
 import time as t
 
@@ -28,7 +28,7 @@ def main_aplication(run):
     #       Instanciando objeto da classe ModuloPyArduino: p_a
     # -----------------------------------------------------------
     p_a = Mpa.ModuloPyArduino()
-    dpo = Dp.DataProcess()
+    # dpo = Dp.DataProcess()
 
     # -----------------------------------------------------------
     #       Exibe informação sobre App
@@ -53,7 +53,8 @@ def main_aplication(run):
     con_umid = con_dht
     con_soil = con_dht
 
-    # runAppTest(con_dht, run)  # call the runAppTest method to test the application.
+    # ----- run app test ----------------
+    runAppTest(con_dht, run)  # call the runAppTest method to test the application.
 
     # -----------------------------------------------------------
     # Calling the loop method to read data form arduino,
@@ -62,7 +63,7 @@ def main_aplication(run):
     if run == 1:
          print("\n\n\n Apliacacao em execucao...\n\n ")
          while run == 1:
-             dpo.serialLoopApp(con_dht, con_umid, con_soil, run)
+           #  dpo.serialLoopApp(con_dht, con_umid, con_soil, run)
              t.sleep(p_a.tempoPadrao)  # dorme(espera) por tempo armazenado na variavel tempoPadra
          close_all_conection()
          print("\n\n ==> Apliacacao ENCERRADA")
@@ -158,8 +159,6 @@ def run_application(rodar):
         print("\n\n ==> Apliacacao NAO EXECUTADA")
         print("\n\t ---------------------")
         exit(0)
-
-
 
 
 # ---------------------------------------------------------
